@@ -1,0 +1,383 @@
+<resources>
+    <string name="app_name">由图SDK Demo</string>
+    <string name="standby_title">您的智能称重好帮手</string>
+    <string name="standby_label">由图识别系统</string>
+    <string name="standby_hint">操作提示：快捷键可帮助快速选中称重商品</string>
+
+    <string name="open_port">打开串口</string>
+    <string name="close_port">关闭串口</string>
+
+    <string name="login">确认登录</string>
+
+    <string name="tag_search">tag_search</string>
+    <string name="tag_shortcut">tag_shortcut</string>
+    <string name="tag_result">tag_result</string>
+    <string name="tag_keyboard">tag_keyboard</string>
+
+    <!--   小票     -->
+
+    <string name="txt_zongjia">总价</string>
+    <string name="txt_danjia">单价</string>
+    <string name="txt_zhongliang">重量</string>
+    <string name="txt_jinghanliang">净含量</string>
+    <string name="txt_label_18_plu">PPPPPSSSSSWWWWWc</string>
+    <string name="txt_label_18_itemNo">NNNNNSSSSSWWWWWc</string>
+    <string name="txt_label_13_plu">PPPPPSSSSSc</string>
+    <string name="txt_label_13_itemNo">NNNNNSSSSSc</string>
+    <string name="txt_label_rule_1">奇数位之和 * 3 + 偶数位之和</string>
+    <string name="txt_label_rule_2">奇数位之和 + 偶数位之和 * 3</string>
+    <string name="txt_label_content_1">五位PLU</string>
+    <string name="txt_label_content_2">五位店内码</string>
+    <string name="txt_label_content_3">总价 000.00</string>
+    <string name="txt_label_content_4">重量 XX000</string>
+    <string name="txt_label_content_5">六位PLU</string>
+    <string name="txt_label_content_6">七位PLU</string>
+    <string name="txt_label_content_7">六位店内码</string>
+    <string name="txt_label_content_8">七位店内码</string>
+    <string name="txt_label_content_9">重量 000XX</string>
+    <string name="txt_label_content_10">总价 0000.0</string>
+    <string name="txt_label_content_11">单价 000.00</string>
+    <string name="txt_label_content_12">单价 0000.00</string>
+    <string name="txt_label_content_13">单价 00000.00</string>
+
+
+    <!--  style_c          -->
+    <string name="jiesuanjiage">结算价格</string>
+    <string name="shangpinmingcheng">商品名称</string>
+    <string name="shibiejieguo">识别结果</string>
+    <string name="search_result">搜索结果</string>
+    <string name="bianhao">编号</string>
+    <string name="kuaijiexuanxiang">商品快捷选项</string>
+    <string name="rengongsousuo">首字母搜索</string>
+    <string name="search_result_tips">请您点击搜索结果</string>
+    <string name="no_item_1">装载台面上空空如也～</string>
+    <string name="no_item_2">请放置您要秤量的商品，小由帮您快速识别～</string>
+    <string name="no_item_3">小由正在识别中....</string>
+    <string name="no_result_1">小由没有识别出来，请使用</string>
+    <string name="no_result_2">商品快捷选项</string>
+    <string name="no_result_3">或者</string>
+    <string name="no_result_4">人工搜索</string>
+    <string name="no_result_5">帮助小由</string>
+    <string name="no_result_6">找出正确商品，小由一定会努力学习的！</string>
+    <string name="no_wifi_1">当前IP地址：</string>
+    <string name="no_wifi_2">您当前无法连接服务器，无法使用识别功能</string>
+    <string name="no_wifi_3">1. 请联系网管检查服务器是否正常工作</string>
+    <string name="no_wifi_4">2. 如果无法解决，请联系客服人员</string>
+
+    <string name="weixuanzhong">未选中商品</string>
+    <string name="sousuo">搜索 :</string>
+    <string name="ganxie">您好，\n感谢您的认真努力</string>
+    <string name="tuichudenglu">退出登陆</string>
+    <string name="fankui">反馈</string>
+    <string name="xuexizhong">学习中</string>
+    <string name="xuehuile">学会啦！小由变得更聪明哟</string>
+    <string name="nothing">没有搜索结果</string>
+    <string name="offline">当前离线</string>
+    <string name="offline_hint">您可以在设置中手动尝试上线</string>
+    <string name="dangqianmoshi">当前模式：</string>
+    <string name="tongxunmoshi">网络设置</string>
+    <string name="sys_shibie">识别设置</string>
+    <string name="xianshihecaozuo">亮度设置</string>
+    <string name="sys_font_size">字体大小</string>
+    <string name="dayinshezhi">打印设置</string>
+    <string name="maichangxinxishezhi">卖场信息设置</string>
+    <string name="tiaomashengcheng">条码生成设置</string>
+    <string name="tiaoxingmaweishu">选择条形码位数</string>
+    <string name="bianmagudingwei">起始位 计重</string>
+    <string name="bianmagudingweijishu">起始位 计数</string>
+    <string name="bianmaneirong_1">编码内容1</string>
+    <string name="bianmaneirong_2">编码内容2</string>
+    <string name="jiaoyanmaguize">校验码规则</string>
+    <string name="tiaomabiaoshi">电子秤条码标识</string>
+    <string name="bianmageshi">编码格式</string>
+    <string name="shebeixinxishezhi">设备信息设置</string>
+    <string name="chenghao">秤号</string>
+    <string name="dayinyangshixuanze">打印样式选择</string>
+    <string name="yangshia">样式A</string>
+    <string name="yangshib">样式B</string>
+    <string name="biaoqianchicun">选择当前卖场使用的标签尺寸</string>
+    <string name="dayinxinxi">选择需要打印的信息</string>
+    <string name="jinghanliang">净含量</string>
+    <string name="tiaoma">条码</string>
+    <string name="riqi">日期</string>
+    <string name="pluhao">商品Plu号</string>
+    <string name="baozhiqi">保质期</string>
+    <string name="dianming">店名</string>
+    <string name="editslogan">编辑Slogan的具体信息</string>
+
+
+    <string name="jiancha">提示：请检查您的服务器网线提示灯是否正常闪烁，如果正常闪烁依旧无法连接，请联系销售人员</string>
+    <string name="yuangongguanli">员工管理</string>
+    <string name="dianpuxinxi">店铺信息</string>
+    <string name="dianpumingcheng">名称信息</string>
+    <string name="lianxiren">联系人</string>
+    <string name="lianxifangshi">联系方式</string>
+    <!--            -->
+    <string name="zongjia">总价:</string>
+    <string name="tejia">特价:</string>
+    <string name="tejia_n">特价</string>
+    <string name="danjia">单价:</string>
+    <string name="danjiacontent">单价：元/千克</string>
+    <string name="weightcontent">重量：千克</string>
+    <string name="zongcontent">总价：元</string>
+    <string name="danjia_unit">元/kg</string>
+    <string name="kilo_unit">kg</string>
+    <string name="price_unit">元</string>
+
+    <string name="danjia_count_unit">元/个</string>
+    <string name="count_unit">个</string>
+    <string name="kilo_label">重量</string>
+    <string name="count_label">数量</string>
+
+    <string name="add_ip">请输入秤的IP</string>
+    <string name="temp_zero">0.00</string>
+    <string name="no_food">请将商品放在称盘上</string>
+    <string name="unrecognize_ai">商品未成功识别\n请点击重新识别或者使用快捷键</string>
+    <string name="unrecognize_no_ai">自动识别已关闭\n请点击下方按钮手动识别</string>
+    <string name="unrecognize_search">未搜索到相关商品\n请重新输入</string>
+    <string name="dianjigaijia">点击可改价</string>
+
+    <string name="unrecognize_desc">[PLU键]、[商品目录]、[数字键盘]辅助识别</string>
+
+    <string name="app_peel">去皮</string>
+    <string name="app_more_goods_code">多品一码</string>
+    <string name="app_prepackaged_mode">预包装模式</string>
+    <string name="app_peel_quit">退出</string>
+    <string name="app_auto_print">自动\n打印</string>
+    <string name="app_auto_print_n">自动打印</string>
+    <string name="app_pre_pack">预包装</string>
+    <string name="app_ai">自动识别</string>
+    <string name="app_price_lock">价格锁定</string>
+    <string name="app_zero">归零</string>
+    <string name="app_change_price">改价</string>
+    <string name="app_discount">打折</string>
+    <string name="app_printCount">打印纸数量:</string>
+    <string name="app_input_hint">请输入商品条码或名称</string>
+    <string name="app_search_no_result">暂无搜索结果</string>
+    <string name="app_item">商品</string>
+    <string name="app_search">搜索</string>
+    <string name="item_pre">预包装</string>
+    <string name="item_del">删除</string>
+    <string name="pre_page">上一页</string>
+    <string name="next_page">下一页</string>
+
+    <string name="reset_zero">清零</string>
+
+    <string name="pluTip">操作说明：长按PLU键进入编辑状态，</string>
+
+    <string name="chooselogin">请点击您的头像</string>
+    <string name="loginss">诚信打称，服务顾客！</string>
+    <string name="loginTitle">智能电子秤登录</string>
+    <string name="loginName">账户</string>
+    <string name="loginMima">密码</string>
+    <string name="loginForgetpw">忘记密码</string>
+
+    <string name="save">保存</string>
+    <string name="save_account">保存账号</string>
+    <string name="guanliyuan">管理员</string>
+
+    <string name="input_password">请输入密码</string>
+    <string name="wrong_password">密码错误,请重新输入</string>
+    <string name="confirm">确定</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="cancel">取消</string>
+    <string name="item_search">搜\u3000\u3000索</string>
+    <string name="resee">识\u3000\u3000别</string>
+    <string name="item_search_ai">搜索商品</string>
+    <string name="resee_ai">重新识别</string>
+
+    <string name="item_search_v">搜\n索</string>
+    <string name="resee_v">识\n别</string>
+    <string name="item_search_ai_v">搜\n索\n商\n品</string>
+    <string name="resee_ai_v">重\n新\n识\n别</string>
+
+    <string name="back">返\u3000\u3000回</string>
+
+    <string name="zhanghao_setting">账号管理</string>
+    <string name="zhanghao_add">新增账号</string>
+
+    <string name="print_manual">手动\n打印</string>
+    <string name="print_manual_n">手动打印</string>
+    <string name="setting">设置</string>
+    <string name="logout">退出</string>
+
+
+    <string name="plu_setting">PLU键\n设置</string>
+    <string name="clear">清除</string>
+    <string name="print">走纸</string>
+    <string name="print_result">打印</string>
+    <string name="print_confirm">打印\n价签</string>
+    <string name="print_confirm_n">打印条码</string>
+    <string name="app_price_lock_n">单品锁定</string>
+
+    <string name="no_plu_search_data">没有该商品，请重新输入</string>
+
+    <string name="plu_jian">快捷键</string>
+    <string name="shangpinmulu">商品目录</string>
+    <string name="shuzijianpan">设置</string>
+    <string name="shezhishuoming">设置说明</string>
+    <string name="shezhicontent">通过按住识别区域进行拖动，或者调节4个角的方式调节识别区域。要求识别区域尽量包含秤盘区域，且尽量地包含秤盘以外的区域</string>
+    <string name="baocunshezhi">保存设置</string>
+
+    <string name="addPizhong">添加</string>
+    <string name="addpizhong">新建皮重</string>
+    <string name="addpizhong_unit">KG</string>
+
+    <string name="item_list">商品列表</string>
+    <string name="pizhongshezhi">皮重设置</string>
+    <string name="search">搜索</string>
+    <string name="search_n">查询</string>
+    <string name="lieshezhi">列设置</string>
+    <string name="search_hint_role">请输入关键词搜索</string>
+    <string name="search_hint">请输入商品名称/生鲜码/商品编号</string>
+    <string name="data_search_hint">请输入交易号/标签条码/生鲜码/商品名字/秤号</string>
+
+    <string name="del">删除</string>
+
+    <string name="pull_change_way">下拉可更改排序方式</string>
+    <string name="pull_select_way">请选择排序方式</string>
+    <string name="tip_for_qupi">重量大于40g,不可清零/去皮</string>
+    <string name="tip_for_qingling">清零功能开发中</string>
+
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="double_zero">00</string>
+    <string name="dote">.</string>
+
+    <string name="del_account">删除账号</string>
+    <string name="del_account_tip">删除账号操作，需要输入当前管理员密码</string>
+    <string name="del_account_confirm">开始删除</string>
+
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="choose_account_avatar">请选择头像</string>
+    <string name="add_item">新增商品</string>
+    <string name="search_item">查找商品</string>
+    <string name="start_recognize">开始识别</string>
+    <string name="input_item">请输入商品条码</string>
+    <string name="next_step">下一步</string>
+    <string name="add_plu">新增快捷键</string>
+    <string name="add_today_price">新增今日特价商品</string>
+    <string name="today_price">今日特价</string>
+    <string name="today_change_price">今日改价</string>
+    <string name="forever_change_price">永久改价</string>
+    <string name="edit">编辑</string>
+    <string name="modify">修改</string>
+    <string name="people_m">店铺管理</string>
+    <string name="people_ms">人员管理</string>
+    <string name="sys_net">网络设置</string>
+    <string name="sys_s">系统设置</string>
+    <string name="product_m">称重管理</string>
+    <string name="kexianshezhi">客显设置</string>
+    <string name="zhuyeyangshi">主页样式</string>
+    <string name="mendianxinxi">门店信息</string>
+    <string name="scale_settings">称重设置</string>
+    <string name="unit_settings_store">计价单位 传秤设置</string>
+    <string name="unit_settings_store_hint">*请确保与ERP传秤软件计价单位相同</string>
+    <string name="unit_settings_show">计价单位 展示设置</string>
+    <string name="mendianxinxi_name_hint">请输入门店名称</string>
+    <string name="mendianxinxi_people_hint">请输入门店联系人</string>
+    <string name="mendianxinxi_phone_hint">请输入联系方式</string>
+    <string name="liangdushezhi">显示亮度设置</string>
+    <string name="huadong">改价操作方式</string>
+    <string name="identify_m">识别设置</string>
+    <string name="zhanghu_hint">请输入账户名</string>
+    <string name="net_set">网络地址设置</string>
+    <string name="yingyongchangjingguanli">应用场景管理(暂无权限)</string>
+    <string name="header_scrolling_behavior">cn.smart.scalesingle.coordinators.HeaderScrollingBehavior</string>
+
+    <string name="price_lock">单品锁定功能已开启，可重复称重某个单品。再次点击即可取消此功能</string>
+    <string name="camera_disconnect">摄像头已断开，请退出登陆，或重启设备（若无效，通知服务商）</string>
+    <string name="zero_weight">重量异常，请检查后重试</string>
+
+    <string name="pinyin_search">拼音搜索</string>
+    <string name="num_search">数字搜索</string>
+
+    <string name="adv_company">生鲜识别方案提供者-浙江由由科技有限公司</string>
+
+    <string name="setting_label_price">总价显示方式</string>
+    <string name="setting_label_example">🕐以18.16 元为例；（请与秤上设置保持一致）</string>
+
+    <string name="setting_label_info">显示内容选择</string>
+    <string name="setting_info_group">组合信息</string>
+    <string name="setting_info_nutrition">营养信息</string>
+
+    <string name="warning_no_internet">网络无法连接，请检查秤上网线</string>
+    <string name="warning_no_internet_title">平板网络异常</string>
+    <string name="warning_no_scale">辉宏秤上点击"菜单"→921* 进行查看\n检查秤的IP地址是否冲突\n在下方输入秤的IP地址，尝试链接</string>
+    <string name="warning_no_scale_title">秤失去链接</string>
+
+    <string name="print_title">我来组成头部</string>
+
+    <!--龙飞称-->
+
+    <string name="state_stable">Stable</string>
+    <string name="state_unstable">Unstable</string>
+    <string name="over_weight">overweighted</string>
+    <string name="warn_1">No Calibration Zero</string>
+    <string name="warn_2">No Calibration kg</string>
+    <string name="err_clear">Pls Clear Zero</string>
+    <string name="no_data">No Data</string>
+    <string name="crc_wrong">CRC Wrong</string>
+    <string name="data_wrong">Data Wrong</string>
+
+
+    <string name="common_times">由图智能系统 %1$s</string>
+
+    <string name="sys_activate_btn">点击激活</string>
+    <string name="sys_activate_cloud">云端激活识别</string>
+    <string name="sys_activate_local">本地激活识别</string>
+    <string name="sys_activate_un">未激活</string>
+    <string name="sys_activate">已激活</string>
+
+
+    <string name="sc_content_sys">内容设置</string>
+    <string name="sc_unit_sys">单位设置</string>
+    <string name="sc_func_sys">功能设置</string>
+    <string name="sc_label_sys">标签地址</string>
+    <string name="sc_tare_sys">去皮</string>
+
+    <string name="activate_input_code_tips">输入激活码</string>
+    <string name="activate_net_tips1">激活前,请保证服务器可以连接外网</string>
+    <string name="activate_net_tips2">激活前请确保称和服务器连接到统一网段，同时保障服务器可以连接外网</string>
+    <string name="activate_net_tips3">激活过程中请确保服务器可以稳定的连接外网</string>
+    <string name="activate_net_tips4">手机号码不正确,请填写正确的手机号码</string>
+    <string name="activate_net_tips5">云识别还有 %1$s 天到期,为避免您的正常使用,请及时续费</string>
+
+    <string name="sc_content_set">内容设置</string>
+    <string name="sc_unit_set">单位设置</string>
+    <string name="sc_print_unit_selector">打印单位选择</string>
+    <string name="sc_adv_content">副屏内容</string>
+    <string name="sc_pull_scale">传称单位选择</string>
+
+
+    <string name="main_exit_mode">退出该模式</string>
+    <string name="main_prepackaged">已进入“预包装模式”</string>
+
+    <string name="tare_input_weight_tips">输入特定皮重质量</string>
+
+    <string name="label_input_tips">输入两位数作为标签起始</string>
+    <string name="label_start_tips_1">自定义输入两位数字</string>
+    <string name="label_start_tips_2">当前用户名作为起始</string>
+
+    <string name="sys_fast_mode">极速模式</string>
+    <string name="sys_auto_print">自动打印</string>
+    <string name="sys_auto_match">自动识别</string>
+    <string name="sys_local_match">本地识别</string>
+
+    <string name="sc_set_weight">+添加特定皮重</string>
+    <string name="sc_add_weight">+皮重</string>
+
+</resources>

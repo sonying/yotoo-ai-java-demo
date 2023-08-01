@@ -1,0 +1,13 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WorkSpace/YoyoDemo/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/WorkSpace/YoyoDemo/app/src/main/res/layout/dialog_demo_camera_point_view.xml" value="0.2993827160493827" />
+        <entry key="..\:/yoyo/android/demo/sdk/YoyoDemo/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/yoyo/android/demo/sdk/YoyoDemo/app/src/main/res/layout/dialog_demo_camera_point_view.xml" value="0.18229166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="20" project-jdk-type="JavaSDK" />
+</project>

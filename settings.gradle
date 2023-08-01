@@ -1,0 +1,2 @@
+rootProject.name='yotoo-ai-java-demo'
+include ':app'

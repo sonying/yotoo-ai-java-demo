@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    //public static final int PREVIEW_WIDTH = 2448; //预览view宽度
+    //public static final int PREVIEW_HRIGHT = 3264;//预览view高度
+
+    <dimen name="PREVIEW_WIDTH">1600dp</dimen>
+    <dimen name="PREVIEW_HEIGHT">900dp</dimen>
+
+    <!--style  c.................................................................-->
+
+    <dimen name="style_c_weight_top_zone_V">11.5</dimen>
+    <dimen name="style_c_weight_top_zone_H">68.75</dimen>
+    <dimen name="style_c_weight_main_zone_V">88.5</dimen>
+    <dimen name="style_c_weight_main_zone_H">68.75</dimen>
+    <dimen name="style_c_weight_sum_zone_V">64.8</dimen>
+    <dimen name="style_c_weight_sum_zone_H">31.25</dimen>
+    <dimen name="style_c_weight_btn_zone_V">35.2</dimen>
+    <dimen name="style_c_weight_btn_zone_H">31.25</dimen>
+
+    <dimen name="style_c_weight_sumzone_sum">23.51</dimen>
+    <dimen name="style_c_weight_sumzone_divide">4.16</dimen>
+    <dimen name="style_c_weight_sumzone_name">13.7</dimen>
+    <dimen name="style_c_weight_sumzone_price">13.7</dimen>
+    <dimen name="style_c_weight_sumzone_weight">13.7</dimen>
+    <dimen name="style_c_weight_sumzone_keys">53</dimen>
+    <dimen name="style_c_weight_sumzone_left_padding">11.5</dimen>
+    <dimen name="style_c_weight_sumzone_right_padding">7</dimen>
+    <dimen name="style_c_weight_sumzone_main">81.5</dimen>
+    <dimen name="style_c_weight_sumzone_row_up">7.59</dimen>
+    <dimen name="style_c_weight_sumzone_row_down">6.11</dimen>
+    <dimen name="style_c_weight_sumzone_resee_up">8.42</dimen>
+    <dimen name="style_c_weight_sumzone_resee_main">23.52</dimen>
+    <dimen name="style_c_weight_sumzone_resee_down">5.55</dimen>
+
+    <dimen name="style_c_setting_left">20.46</dimen>
+    <dimen name="style_c_setting_right">79.54</dimen>
+    <dimen name="style_c_setting_top">19.25</dimen>
+    <dimen name="style_c_setting_bottom">80.75</dimen>
+
+
+
+
+    <!--style  a & b.................................................................-->
+    <dimen name="style_a_weight_function_H">11</dimen>
+
+    <dimen name="style_a_weight_title_V">15</dimen>
+    <dimen name="style_a_weight_title_H">88</dimen>
+
+    <dimen name="style_a_weight_main_V">80</dimen>
+    <dimen name="style_a_weight_main_H">70</dimen>
+
+    <dimen name="style_a_weight_bottom_V">5</dimen>
+
+    <dimen name="style_a_weight_search_V">85</dimen>
+    <dimen name="style_a_weight_search_H">30</dimen>
+    <!--.................................................................-->
+    <dimen name="style_b_weight_function_H">67</dimen>
+
+    <dimen name="style_b_weight_title_V">18</dimen>
+    <dimen name="style_b_weight_title_H">33</dimen>
+
+    <dimen name="style_b_weight_main_V">80</dimen>
+    <dimen name="style_b_weight_main_H">75</dimen>
+
+    <dimen name="style_b_weight_bottom_V">5</dimen>
+
+    <dimen name="style_b_weight_search_V">72</dimen>
+    <dimen name="style_b_weight_search_H">32.25</dimen>
+    <!--.................................................................-->
+    <dimen name="style_old_weight_function_V">6</dimen>
+
+    <dimen name="style_old_weight_title_V">48</dimen>
+    <dimen name="style_old_weight_title_H">20</dimen>
+
+    <dimen name="style_old_weight_main_V">41</dimen>
+    <dimen name="style_old_weight_main_H">78</dimen>
+
+    <dimen name="style_old_weight_bottom_V">5</dimen>
+
+    <dimen name="style_old_weight_search_V">45</dimen>
+    <!--.................................................................-->
+
+    <dimen name="collapsed_header_height">10dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_36">36sp</dimen>
+    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="text_size_48">48sp</dimen>
+    <dimen name="text_size_50">50sp</dimen>
+    <dimen name="text_size_55">55sp</dimen>
+    <dimen name="text_size_60">60sp</dimen>
+    <dimen name="text_size_68">68sp</dimen>
+    <dimen name="text_size_72">72sp</dimen>
+    <dimen name="text_size_80">80sp</dimen>
+
+    <dimen name="text_size_18_pro">26sp</dimen>
+    <dimen name="text_size_22_pro">30sp</dimen>
+    <dimen name="text_size_48_pro">54sp</dimen>
+    <dimen name="text_size_48_pro_second">44sp</dimen>
+    <dimen name="text_size_24_pro">32sp</dimen>
+    <dimen name="text_size_16_pro">20sp</dimen>
+
+
+    <dimen name="text_size_18_3">12sp</dimen>
+    <dimen name="text_size_20_3">13.33sp</dimen>
+    <dimen name="text_size_40_3">26.66sp</dimen>
+
+
+    <dimen name="set_width">900dip</dimen>
+    <dimen name="set_height">600dip</dimen>
+
+    <dimen name="key_width">100dip</dimen>
+    <dimen name="pin_width">50dip</dimen>
+    <dimen name="pin_width_pro">70dip</dimen>
+    <dimen name="pin_width_pro_confirm">140dip</dimen>
+    <dimen name="pin_height">108dip</dimen>
+    <dimen name="key_width_s">180dip</dimen>
+    <dimen name="key_height_s">80dip</dimen>
+    <dimen name="key_height">80dip</dimen>
+
+    <dimen name="key_height_s_pro">182dip</dimen>
+    <dimen name="key_height_s_pro_two">364dip</dimen>
+
+    <dimen name="key_height_pro">140dip</dimen>
+
+    <dimen name="key_height_small">48dip</dimen>
+
+    <dimen name="trans_top_common">30dip</dimen>
+
+    <dimen name="key_height_pass">100dip</dimen>
+    <dimen name="key_width_pass">133dip</dimen>
+
+
+    <dimen name="size_220">220dip</dimen>
+    <dimen name="size_230">230dip</dimen>
+    <dimen name="size_250">250dip</dimen>
+    <dimen name="size_262">262dip</dimen>
+    <dimen name="size_278">185.33dip</dimen>
+    <dimen name="size_618">618dip</dimen>
+    <dimen name="size_560">560dip</dimen>
+    <dimen name="size_56">56dip</dimen>
+    <dimen name="size_306">204dip</dimen>
+    <dimen name="size_312">208dip</dimen>
+    <dimen name="size_10_3">6dip</dimen>
+    <dimen name="size_40_3">26.66dip</dimen>
+    <dimen name="size_32_3">32dip</dimen>
+    <dimen name="size_29">29dip</dimen>
+    <dimen name="size_140">140dip</dimen>
+    <dimen name="size_161">107.33dip</dimen>
+    <dimen name="size_70">70dip</dimen>
+    <dimen name="size_47">31.33dip</dimen>
+    <dimen name="size_392">261.33dip</dimen>
+    <dimen name="size_87">58dip</dimen>
+    <dimen name="size_37">24.66dip</dimen>
+    <dimen name="size_39">26dip</dimen>
+    <dimen name="size_570">380dip</dimen>
+    <dimen name="size_170">170dip</dimen>
+    <dimen name="size_279">186dip</dimen>
+    <dimen name="size_297">297dip</dimen>
+    <dimen name="size_22">22dip</dimen>
+
+
+    <dimen name="size_153">183.6dip</dimen>
+    <dimen name="size_156">187.2dip</dimen>
+    <dimen name="size_280">280dip</dimen>
+    <dimen name="size_314">376.8dip</dimen>
+
+    <dimen name="size_1">1dip</dimen>
+    <dimen name="size_2">2dip</dimen>
+    <dimen name="size_5">5dip</dimen>
+    <dimen name="size_7">7dip</dimen>
+
+    <dimen name="size_10">10dip</dimen>
+    <dimen name="size_12">12dip</dimen>
+    <dimen name="size_15">15dip</dimen>
+    <dimen name="size_16">16dip</dimen>
+    <dimen name="size_18">18dip</dimen>
+    <dimen name="size_20">20dip</dimen>
+    <dimen name="size_20_3">20dip</dimen>
+    <dimen name="size_23">23dip</dimen>
+    <dimen name="size_27">27dip</dimen>
+    <dimen name="size_24">24dip</dimen>
+    <dimen name="size_25">25dip</dimen>
+    <dimen name="size_100">100dip</dimen>
+    <dimen name="size_240">240dip</dimen>
+    <dimen name="size_30">30dip</dimen>
+    <dimen name="size_32">32dip</dimen>
+    <dimen name="size_36">36dip</dimen>
+    <dimen name="size_35">35dip</dimen>
+    <dimen name="size_40">40dip</dimen>
+    <dimen name="size_48">48dip</dimen>
+    <dimen name="size_50">50dip</dimen>
+    <dimen name="size_52">52dip</dimen>
+    <dimen name="size_57">57dip</dimen>
+    <dimen name="size_31">30.2dip</dimen>
+    <dimen name="size_60">60dip</dimen>
+    <dimen name="size_28">28dip</dimen>
+    <dimen name="size_68">68dip</dimen>
+    <dimen name="size_76">76dip</dimen>
+    <dimen name="size_64">64dip</dimen>
+    <dimen name="size_546">546dip</dimen>
+    <dimen name="size_446">380dip</dimen>
+    <dimen name="size_446_pro">532dip</dimen>
+    <dimen name="size_160">160dip</dimen>
+    <dimen name="size_80">80dip</dimen>
+    <dimen name="size_80_pro">112dip</dimen>
+    <dimen name="size_90">80dip</dimen>
+    <dimen name="size_110">110dip</dimen>
+    <dimen name="size_115">115dip</dimen>
+    <dimen name="size_120">106dip</dimen>
+    <dimen name="size_120_pro">130dip</dimen>
+    <dimen name="size_120_pro_change_price">155dip</dimen>
+    <dimen name="size_240_pro">310dip</dimen>
+    <dimen name="size_130">130dip</dimen>
+    <dimen name="size_150">150dip</dimen>
+    <dimen name="size_155">155dip</dimen>
+    <dimen name="size_120_1">120dip</dimen>
+    <dimen name="size_180">180dip</dimen>
+    <dimen name="show_fun_size">120dip</dimen>
+    <dimen name="h_shortcut">195dip</dimen>
+    <dimen name="size_200">200dip</dimen>
+    <dimen name="size_208">208dip</dimen>
+    <dimen name="size_222">222dip</dimen>
+    <dimen name="size_238">238dip</dimen>
+    <dimen name="size_260">260dip</dimen>
+    <dimen name="size_270">270dip</dimen>
+    <dimen name="size_300">300dip</dimen>
+    <dimen name="size_310">310dip</dimen>
+
+    <dimen name="size_340">340dip</dimen>
+    <dimen name="size_360">360dip</dimen>
+    <dimen name="size_320">320dip</dimen>
+    <dimen name="size_368">368dip</dimen>
+    <dimen name="size_400">400dip</dimen>
+    <dimen name="size_410">410dip</dimen>
+    <dimen name="size_480">480dip</dimen>
+    <dimen name="size_500">500dip</dimen>
+    <dimen name="size_520">520dip</dimen>
+    <dimen name="size_580">580dip</dimen>
+    <dimen name="size_600">600dip</dimen>
+
+    <dimen name="size_720">720dip</dimen>
+    <dimen name="size_960">960dip</dimen>
+    <dimen name="size_search_item_offline">210dip</dimen>
+    <dimen name="size_search_item_small">155dip</dimen>
+    <dimen name="size_search_item_big">265dip</dimen>
+</resources>

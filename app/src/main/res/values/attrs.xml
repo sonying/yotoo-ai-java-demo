@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="label_size">
+        <item>8</item>
+        <item>13</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="label_rule">
+        <item>@string/txt_label_rule_1</item>
+        <item>@string/txt_label_rule_2</item>
+    </string-array>
+
+    <string-array name="label_content">
+        <item>@string/txt_label_content_1</item>
+        <item>@string/txt_label_content_2</item>
+        <item>@string/txt_label_content_3</item>
+        <item>@string/txt_label_content_4</item>
+        <item>@string/txt_label_content_5</item>
+        <item>@string/txt_label_content_6</item>
+        <item>@string/txt_label_content_7</item>
+        <item>@string/txt_label_content_8</item>
+        <item>@string/txt_label_content_9</item>
+        <item>@string/txt_label_content_10</item>
+        <item>@string/txt_label_content_11</item>
+        <item>@string/txt_label_content_12</item>
+        <item>@string/txt_label_content_13</item>
+    </string-array>
+
+    <string-array name="label_content_1">
+        <item>@string/label_start_tips_1</item>
+        <item>@string/label_start_tips_2</item>
+    </string-array>
+
+</resources>

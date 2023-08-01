@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'com.yanzhenjie.andserver'
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        multiDexEnabled true
+        applicationId 'com.tscale.demo'
+        minSdkVersion 21
+        targetSdk 31
+        versionCode 3
+        versionName "3.4.0"
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+
+    }
+
+    signingConfigs {
+        releaseSign {
+            storeFile file('C:\\Users\\aaron\\Desktop\\android_app\\YoyoDemo_3725\\signature\\platform.jks')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.releaseSign
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            debuggable true
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.releaseSign
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+repositories {
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation('yoyo-sdk:yoyo:3.7.2.5') {
+        exclude module: 'support-v4'
+    }
+    implementation files('libs/armeabi-v7a/libserial-release.aar')
+    implementation files('libs/armeabi-v7a/tslog-release.aar')
+    implementation files('libs/armeabi-v7a/tsprinter-release.aar')
+    implementation files('libs/armeabi-v7a/tsscale-release.aar')
+    implementation files('libs/armeabi-v7a/tsutil-release.aar')
+    //implementation(name: 'libserial-release', ext: 'aar')
+    //implementation(name: 'tslog-release', ext: 'aar')
+    //implementation(name: 'tsprinter-release', ext: 'aar')
+    //implementation(name: 'tsscale-release', ext: 'aar')
+    //implementation(name: 'tsutil-release', ext: 'aar')
+}
