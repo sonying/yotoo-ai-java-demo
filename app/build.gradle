@@ -4,12 +4,13 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-parcelize'
 apply plugin: 'com.yanzhenjie.andserver'
 
+
 android {
     compileSdkVersion 31
     defaultConfig {
         multiDexEnabled true
         applicationId 'com.tscale.demo'
-        minSdkVersion 21
+        minSdk 27
         targetSdk 31
         versionCode 3
         versionName "3.4.0"
@@ -72,6 +73,7 @@ dependencies {
     implementation('yoyo-sdk:yoyo:3.7.2.5') {
         exclude module: 'support-v4'
     }
+    implementation 'com.github.unverbraucht:number-keyboard:v3.0.4'
     implementation files('libs/armeabi-v7a/libserial-release.aar')
     implementation files('libs/armeabi-v7a/tslog-release.aar')
     implementation files('libs/armeabi-v7a/tsprinter-release.aar')

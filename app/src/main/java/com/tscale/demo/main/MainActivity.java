@@ -1,10 +1,10 @@
 package com.tscale.demo.main;
 
 import static com.yoyo.ui.common.enums.WeightStableEnum.WeightStable;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
@@ -16,11 +16,11 @@ import android.os.SystemClock;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -106,13 +106,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Iterator;
-
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.util.Timer;
 import java.util.TimerTask;
+import com.davidmiguel.numberkeyboard.NumberKeyboard;
+import com.davidmiguel.numberkeyboard.NumberKeyboardListener;
 
-public class MainActivity extends AppCompatActivity implements ResultItemAdapter.ActionItemListener , TADCallback {
+public class MainActivity extends AppCompatActivity implements ResultItemAdapter.ActionItemListener , TADCallback, NumberKeyboardListener {
 
     private TextView price1;
     private TextView price2;
@@ -143,19 +144,26 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private TextView search;
     private String matchingTag = "";
 
-    //tscale add args
+    // Tscale add args ================
+    private Button clear_to_zero;
+    private ImageView zeroStatus;
+    private ImageView stableStatus;
+    private ImageView tareStatus;
+    private TextView tare_func;
+    private TextView weightDesc;
     private boolean tszar = false;
-
     private TScaleLabel printer;
-
     private static boolean flag = false;
-
     private static int baudrate = 9600;
     private JNIScale mScale = JNIScale.getScale(baudrate);
     //private JNIScale mScale = JNIScale.getScale(115200);
-
     long onWeightUpdate_startTime = 0;
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
+    private final static String SHART = "data";
+    private NumberKeyboard numberKeyboard;
 
+    // Tscale add args end ==========
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -168,6 +176,14 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             TSLanguageSettings.updateLocaleLanguage(this);
             mScale.setCallback(this);
             TSLog.setDebug(false);
+            sharedPreferences = getSharedPreferences(SHART, Activity.MODE_PRIVATE);
+            editor = sharedPreferences.edit();
+            boolean tareStatusFlag = sharedPreferences.getBoolean("tareStatus", false);
+            if (tareStatusFlag) {
+                editor.putBoolean("tareStatus", true).apply();
+            } else {
+                editor.putBoolean("tareStatus", false).commit();
+            }
             printer = getUSBPrinter();
         } catch (Exception e) {
             e.printStackTrace();
@@ -181,10 +197,15 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         btnUpdateShopInfo = findViewById(R.id.btn_update_shop_info);
         btnSetCameraPoint = findViewById(R.id.btn_set_camera_point);
 
+        numberKeyboard = findViewById(R.id.numberKeyboard);
         price1 = findViewById(R.id.tv_top_unit_price);
         price2 = findViewById(R.id.tv_top_unit_price_2);
         tv_top_amount = findViewById(R.id.tv_top_amount);
         tv_top_amount_2 = findViewById(R.id.tv_top_amount_2);
+        stableStatus = findViewById(R.id.stable_status);
+        zeroStatus = findViewById(R.id.zero_status);
+        tareStatus = findViewById(R.id.tare_status);
+        clear_to_zero = findViewById(R.id.clear_to_zero);
         sum1 = findViewById(R.id.tv_price_sum);
         sum2 = findViewById(R.id.tv_price_sum_2);
         salePriceDesc = findViewById(R.id.salePriceDesc);
@@ -195,7 +216,8 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         saveLearning = findViewById(R.id.saveLearning);
         getLearning = findViewById(R.id.getLearning);
         setLearning = findViewById(R.id.setLearning);
-
+        tare_func = findViewById(R.id.tare_func);
+        weightDesc = findViewById(R.id.weightDesc);
         studyMoudle = findViewById(R.id.studyMoudle);
         commodityManager = findViewById(R.id.commodityManager);
         listView.setLayoutManager(new GridLayoutManager(this, 4));
@@ -212,8 +234,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         rxPermissionsAndroid11();
         initSdk();
         initListener();
-        //TODO 此处调用仅为演示时设置固定重量，客户按需开发自己的取重，清零等，在取重代码中调用此方法传重量
-        //checkWeight(1, WeightStableEnum.WeightStable);
     }
 
     private void initListener() {
@@ -406,6 +426,20 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             }
         });
 
+        tare_func.setOnClickListener(v -> {
+            if (JNIScale.getScale() != null) {
+                String tare1 = mScale.tare(sharedPreferences.getBoolean("tareStatus", false));
+            }
+        });
+
+        clear_to_zero.setOnClickListener(v -> {
+            Log.i("clear_to_zero","tszar value:" + tszar );
+            if (!tszar) {
+                mScale.zero();
+            }
+        });
+
+        numberKeyboard.setListener(this);
     }
 
     private void initSdk() {
@@ -479,7 +513,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         }, config);
     }
 
-
     //申请Android11权限
     private void rxPermissionsAndroid11() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R ) {
@@ -508,13 +541,11 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         }
     }
 
-
     //按屏幕宽度适配
     @Override
     public Resources getResources() {
         return AdaptScreenUtils.adaptWidth(super.getResources(), 1920);
     }
-
 
     //传称
     private void doTransData() {
@@ -542,7 +573,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
 
 
     }
-
 
     //接收键盘输入的值
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -597,12 +627,21 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     }
 
     //重量的回调
-    public void checkWeight(double weight, WeightStableEnum stable) {
+    public void checkWeight(TADWeight weight,boolean isStable, boolean isTared, boolean isZero) {
         runOnUiThread(() -> {
-            int w = (int) (weight * 1000);
+            double tscale_weight = Double.valueOf(weight.getWeightInGramString()).doubleValue();
+            String wStr = weight.getWeightString();
+            int w = (int) (tscale_weight);
             this.weight = w;
-            updateWeight(w);
-            YoYoUtils.aiMatching(new AIMatchingRequest(w, stable, RecognitionModelEnum.Auto));
+            if( wStr.contains("UL") ){
+                weightDesc.setText("UL");
+            } else if ( wStr.contains("OL") ) {
+                weightDesc.setText("OL");
+            } else {
+                updateStatus(isStable,isTared,isZero);
+                updateWeight(w);
+            }
+            YoYoUtils.aiMatching(new AIMatchingRequest(w, isStable ? WeightStableEnum.WeightStable : WeightStableEnum.WeightNotStable, RecognitionModelEnum.Auto));
             //拿走清理掉数据
             if (w <= 0) {
                 resultItemAdapter.clean();
@@ -613,12 +652,12 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 tvTips.setText("装载台面上空空如也～\n\n" +
                         "请放置您要秤量的商品，小由帮您快速识别～");
             }
-
             updateView();
         });
     }
 
     private void updateWeight(int weight) {
+        Log.i("updateWeight","updateWeight:" + weight );
         int d1 = weight / 1000;
         int d2 = weight % 1000;
         boolean isF = d2 < 0;
@@ -631,8 +670,8 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
 
         tv_top_amount.setText((isF ? "-" : "") + d1 + ".");
         tv_top_amount_2.setText(part2);
+        weightDesc.setText("kg");
     }
-
 
     //更新当前UI
     private void updateView() {
@@ -672,6 +711,39 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 price2.setText("0" + p2);
             } else {
                 price2.setText(p2 + "");
+            }
+        }
+    }
+
+    private void updateStatus(boolean isStable, boolean isTared, boolean isZero) {
+        final boolean stable = isStable;
+        final boolean tared = isTared;
+        final boolean zero = isZero;
+        if (zero) {
+            if (zeroStatus.getVisibility() != View.VISIBLE) {
+                zeroStatus.setVisibility(View.VISIBLE);
+            }
+        } else {
+            if (zeroStatus.getVisibility() != View.GONE) {
+                zeroStatus.setVisibility(View.GONE);
+            }
+        }
+        if (stable) {
+            if (stableStatus.getVisibility() != View.VISIBLE) {
+                stableStatus.setVisibility(View.VISIBLE);
+            }
+        } else {
+            if (stableStatus.getVisibility() != View.GONE) {
+                stableStatus.setVisibility(View.GONE);
+            }
+        }
+        if (tared) {
+            if (tareStatus.getVisibility() != View.VISIBLE) {
+                tareStatus.setVisibility(View.VISIBLE);
+            }
+        } else {
+            if (tareStatus.getVisibility() != View.GONE) {
+                tareStatus.setVisibility(View.GONE);
             }
         }
     }
@@ -719,24 +791,25 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
 
         //设置点击单价和总价
         updateView();
-        updateWeight(1000);
+        updateWeight(weight);
     }
 
     // tscale functions
     @Override
     public void onWeightUpdate(TADWeight weight, boolean isStable, boolean isTared, boolean isZero) {
         //TSLog.console(TSLog.v, "Update Weight: " + weight.getWeightInGramString() + " : " + weight.getUnit() + ",isStable:" + isStable );
-        Log.i("onWeightUpdate","Update Weight: " + weight.getWeightInGramString() + " : " + weight.getUnit() + ",isStable:" + isStable);
+        //Log.i("onWeightUpdate","Update Weight: " + weight.getWeightInGramString() + " : " + weight.getUnit() + ",isStable:" + isStable + ",isTared:" + isTared + ",isZero:" + isZero);
+        //Log.i("onWeightUpdate", "Get weight string:" + weight.getWeightString() + " sign:" + weight.getWeightSign() + " gram:" + String.valueOf(weight.getWeightInGram()));
         //long startTime = SystemClock.elapsedRealtime();
         if( onWeightUpdate_startTime == 0 ) {
             onWeightUpdate_startTime = SystemClock.elapsedRealtime();
-            checkWeight(weight.getWeightInGram(), isStable ? WeightStableEnum.WeightStable:WeightStableEnum.WeightNotStable);
+            checkWeight(weight,isStable,isTared,isZero);
             //TSLog.console(TSLog.i, "First exec onWeightUpdate");
         }else{
             long endTime = SystemClock.elapsedRealtime();
             if( endTime - onWeightUpdate_startTime > 100 ){
                 onWeightUpdate_startTime = endTime;
-                checkWeight(weight.getWeightInGram(), isStable ? WeightStableEnum.WeightStable:WeightStableEnum.WeightNotStable);
+                checkWeight(weight,isStable,isTared,isZero);
                 //TSLog.console(TSLog.i, "more 100ms then exec onWeightUpdate");
             }else{
                 //TSLog.console(TSLog.i, "not more 100ms then do nothing");
@@ -826,5 +899,25 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             }
         }
         return null;
+    }
+
+    @Override
+    public void onNumberClicked(int number) {
+        //Toast.makeText(this, "Number keyboard:" + number , Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onLeftAuxButtonClicked() {
+        //Toast.makeText(this, "left aux keyboard!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRightAuxButtonClicked() {
+        //Toast.makeText(this, "right aux keyboard!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onModifierButtonClicked(int number) {
+        // Keyboard has no modifiers
     }
 }
