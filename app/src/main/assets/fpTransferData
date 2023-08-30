@@ -1,0 +1,3140 @@
+[
+    {
+        "itemName": "健星法式雪饼",
+        "plu": 6110001,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "健星玉米味雪饼",
+        "plu": 6110002,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "健星山药味拉丝饼",
+        "plu": 6110003,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "健星红豆味法式雪饼",
+        "plu": 6110005,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "健星绿豆味法式雪饼",
+        "plu": 6110006,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "健星莲子饼",
+        "plu": 6110007,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "吃货加油话梅肉透明",
+        "plu": 5123023,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "吃货加油九制话梅透明",
+        "plu": 5123026,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "吃货加油红提果干透明",
+        "plu": 5123027,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "罗班长情人梅",
+        "plu": 5091003,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "罗班长妙酸梅",
+        "plu": 5091004,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "罗班长果味泡泡糖",
+        "plu": 5091063,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "罗班长CC卷",
+        "plu": 5091064,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "凯逗熊3D果汁糖（草莓）",
+        "plu": 7141003,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "凯逗熊3D果汁糖（香橙）",
+        "plu": 7141005,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "咭咭豆小熊版维生素软糖（白桃味）",
+        "plu": 5202002,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "咭咭豆小熊版益生菌软糖（酸奶味）",
+        "plu": 5202003,
+        "itemType": 1,
+        "unitPrice": 39.6
+    },
+    {
+        "itemName": "蔬上皇黑芝麻苏打",
+        "plu": 6052052,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "锦威纯沙琪玛（燕麦味）",
+        "plu": 6012081,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "锦威纯沙琪玛（鸡蛋味)",
+        "plu": 6012083,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "锦威纯沙琪玛（黑糖味)",
+        "plu": 6012084,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "立威草莓味威化",
+        "plu": 6012062,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "立威牛奶味威化",
+        "plu": 6012063,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "立威花生味威化",
+        "plu": 6012064,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "立威香芋味威化",
+        "plu": 6012065,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "玛格莉特托盒蒜香排骨味",
+        "plu": 7230005,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "玛格莉特托盒冰糖绿豆沙味",
+        "plu": 7230006,
+        "itemType": 1,
+        "unitPrice": 17.6
+    },
+    {
+        "itemName": "奥利奥双心脆威化草莓味",
+        "plu": 6102016,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "奥利奥双心脆威化香草味",
+        "plu": 6102019,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "奥利奥双心脆威化柠檬味",
+        "plu": 6102047,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "浏乡小食嘴粗粮锅巴（酱香牛排味）",
+        "plu": 5014031,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "巧卖UK细沙榴莲饼",
+        "plu": 7067002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩白芝麻麻香港饼",
+        "plu": 7051010,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩琪玛酥",
+        "plu": 7051019,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "旺食光绿豆糕",
+        "plu": 5201001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "旺食光冰沙糕",
+        "plu": 5201002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "金顺园香芋味",
+        "plu": 5024003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "越南进口黄龙绿豆糕",
+        "plu": 149001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "成隆灯笼糕",
+        "plu": 5023007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "艾德堡蛋黄酥（红豆味）",
+        "plu": 122002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "鑫香园（靓姐）出色出众卤汁香干",
+        "plu": 1005063,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "鑫香园（靓姐）卤汁面筋散称",
+        "plu": 1005064,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "鑫香园（靓姐）芝麻糕",
+        "plu": 1005065,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "鑫香园（靓姐）卤汁豆角",
+        "plu": 1005068,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "鑫香园（靓姐）素牛筋",
+        "plu": 1005074,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "发仔酒鬼牛板筋",
+        "plu": 1004001,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "发仔烧烤牛肉粒",
+        "plu": 1004003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "发仔真空包素牛肉",
+        "plu": 1004031,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "发仔真空包素蹄筋",
+        "plu": 1004032,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "倍爽豆干(麻辣)",
+        "plu": 1001003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "倍爽豆干(海鲜)",
+        "plu": 1001004,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "倍爽豆干(野山椒)",
+        "plu": 1001005,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "倍爽豆干(泡椒)",
+        "plu": 1001006,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "谭小泡嫩豆干（麻辣味）",
+        "plu": 1119034,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "谭小泡嫩豆干（香卤味）",
+        "plu": 1119035,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "谭小泡嫩豆干（香辣味）",
+        "plu": 1119036,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "谭小泡手磨豆干（香辣味）",
+        "plu": 1119039,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "谭小泡手磨豆干（麻辣味）",
+        "plu": 1119040,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "新林嘴吃飞饼",
+        "plu": 11058004,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "新林嘴吃干棒",
+        "plu": 11058005,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "解压食刻喷香油条",
+        "plu": 1036072,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "解压食刻脏脏辣棒",
+        "plu": 1036073,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "解压食刻大刀素肉",
+        "plu": 1036074,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "润进拉丝豆干（香辣）",
+        "plu": 1039044,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "润进拉丝豆干（黑鸭）",
+        "plu": 1039045,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "润进素牛肉豆片（香辣）",
+        "plu": 1039046,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "润进素牛肉豆片（烧烤）",
+        "plu": 1039047,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "雅利洁豆爱辣串（红色）",
+        "plu": 1028002,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "雅利洁脆爽凉皮（红色/黄色）",
+        "plu": 1028010,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "雅利洁兰花串",
+        "plu": 1028013,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "雅利洁卤香豆腐串",
+        "plu": 1028018,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "村姑湘情大辣棒",
+        "plu": 11085001,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "村姑湘情魔力丝",
+        "plu": 11085002,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "村姑湘情素牛筋",
+        "plu": 11085003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "村姑湘情片片香",
+        "plu": 11085005,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "皓浩手撕素牛肉（烧烤味）",
+        "plu": 1031026,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "皓浩手撕素牛肉（香辣味）",
+        "plu": 1031027,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "爆道嗦辣粉香辣味",
+        "plu": 11112003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "爆道嗦辣粉烧烤味",
+        "plu": 11112004,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "嘴韵味素醉拳龙虾",
+        "plu": 11073002,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "嘴韵味红油凉皮",
+        "plu": 11073003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "嘴韵味素牛筋",
+        "plu": 11073004,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "佳龙亲亲烧（红烧牛肉味）",
+        "plu": 1108003,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "佳龙亲亲烧（麦辣鸡汁味）",
+        "plu": 1108004,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "佳龙香辣蒜味豆角干",
+        "plu": 1108005,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "佳龙糯辣片",
+        "plu": 1108027,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "佳龙糯面筋",
+        "plu": 1108028,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "君仔君仔CD辣圈（香辣味）",
+        "plu": 11027001,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "与李湘食小菜很忙黄瓜",
+        "plu": 1092016,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "与李湘食小菜很忙秋葵",
+        "plu": 1092017,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "与李湘食小菜很忙贡菜",
+        "plu": 1092019,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘满天散称海带丝",
+        "plu": 1035004,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘满天散称香辣豆角",
+        "plu": 1035005,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘满天散称香辣萝卜",
+        "plu": 1035006,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘满天散称馋萝卜头",
+        "plu": 1035009,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘滨土豆丸家烧烤味",
+        "plu": 11055003,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "湘滨土豆丸家香辣味",
+        "plu": 11055004,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "章鸭子香辣海带丝",
+        "plu": 11031010,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "章鸭子毛豆（绝辣味）",
+        "plu": 11031002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "章鸭子大花生（香辣卤汁味）",
+        "plu": 11031003,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谭小泡玉米笋（山椒味）",
+        "plu": 1119022,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谭小泡一根独笋（山椒味）",
+        "plu": 1119023,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谭小泡谭一刀藕片（香辣味）",
+        "plu": 1119026,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "闲佳品金针菇（麻辣）",
+        "plu": 11113002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "闲佳品杏鲍菇（麻辣）",
+        "plu": 11113005,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "仟香佰辣脆笋鱿鱼（烧烤味）",
+        "plu": 11028012,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧大卤藕（香辣味）",
+        "plu": 11014005,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧大卤藕（黑鸭味）",
+        "plu": 11014006,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "华源禾鹌鹑蛋素心肠（火鸡味）",
+        "plu": 11093001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "华源禾素心肠肉蟹堡（烧烤味）",
+        "plu": 11093003,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "丁丁同学散装海带香辣味",
+        "plu": 11109001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "丁丁同学散装小鲜笋泡椒味",
+        "plu": 11109002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "辣本营大刀萝卜条（香辣味）",
+        "plu": 11020001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "辣本营大刀萝卜条（麻辣味）",
+        "plu": 11020002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧麻辣豆干（香辣味）",
+        "plu": 11014030,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧烧汁串串干（香辣味）",
+        "plu": 11014036,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧书签豆干（香辣味）",
+        "plu": 11014039,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧长寿镇风味豆干（香辣味）",
+        "plu": 11014041,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴散称原浆豆干（麻辣味）",
+        "plu": 11078008,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴散称原浆豆干（剁椒味）",
+        "plu": 11078009,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "双双朵朵片片香豆干（绝辣味）",
+        "plu": 11099004,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "解压食刻平江酱干香辣味",
+        "plu": 1036080,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "解压食刻武冈柴火干香辣味",
+        "plu": 1036084,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "解压食刻黄金条香辣味",
+        "plu": 1036086,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "解压食刻老卤酱干香辣味",
+        "plu": 1036130,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "解压食刻平江酱干孜然味",
+        "plu": 1036131,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴红油武冈香干",
+        "plu": 11078001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴红油灯笼干",
+        "plu": 11078002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴红油四方干",
+        "plu": 11078003,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "乡乡嘴红油豆花串",
+        "plu": 11078005,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "玉峰霸王丝",
+        "plu": 11053001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "玉峰霸王青豆辣条",
+        "plu": 11053002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "禛香肥牛牛肉味",
+        "plu": 1123046,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "禛香肥牛麻辣味",
+        "plu": 1123047,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "黑色诱惑长沙臭豆腐（孜然味）",
+        "plu": 11114001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "黑色诱惑长沙臭豆腐（酱香味）",
+        "plu": 11114002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "曾师傅手撕豆皮（香辣味）",
+        "plu": 11099001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "曾师傅手撕豆皮（绝辣味）",
+        "plu": 11099002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "佳龙手撕素牛排鸡汁味",
+        "plu": 1108025,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "佳龙手撕素牛排黑椒味",
+        "plu": 1108029,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "口口巧酥脆豆皮（香辣味）",
+        "plu": 11014047,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙小面筋",
+        "plu": 1012010,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙大面筋",
+        "plu": 1012021,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙亲嘴烧（经典香辣味）条",
+        "plu": 1012028,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙亲嘴烧（贵州糊辣味）条",
+        "plu": 1012030,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙亲嘴烧（经典香辣风味）",
+        "plu": 1012032,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "卫龙亲嘴烧（贵州糊辣味）",
+        "plu": 1012033,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "锦涛果园开胃山楂方片（机开方）",
+        "plu": 5006006,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "锦涛果园雪花开胃山楂方片（机雪方）",
+        "plu": 5006007,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "锦涛果园金钱山楂片（机金钱）",
+        "plu": 5006009,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "可胜（蓝莓山楂布丁）",
+        "plu": 5007073,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "可胜（山楂桂圆）",
+        "plu": 5007083,
+        "itemType": 1,
+        "unitPrice": 21.6
+    },
+    {
+        "itemName": "小贵族AD果冻香橙味",
+        "plu": 118003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族AD果冻蜜桃味",
+        "plu": 118004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族小精灵系列（荔枝味）",
+        "plu": 118007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族小精灵系列（芒果味）",
+        "plu": 118008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族优酪布甸果冻（玉米味",
+        "plu": 118012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族优酪布甸果冻（蜜桃味",
+        "plu": 118013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族CC果子草莓味",
+        "plu": 118019,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族CC果子香橙味",
+        "plu": 118020,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果肉果冻樱桃味",
+        "plu": 118062,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果肉果冻菠萝味",
+        "plu": 118065,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果肉果冻菠萝味",
+        "plu": 118070,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果肉果冻香橙味",
+        "plu": 118072,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果肉果冻什锦味",
+        "plu": 118206,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果优果冻香橙味",
+        "plu": 118076,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果优果冻菠萝味",
+        "plu": 118077,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族果优果冻樱桃味",
+        "plu": 118078,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族鲜时菓吧（香橙味）",
+        "plu": 118101,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族鲜时菓吧（菠萝味）",
+        "plu": 118102,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族鲜时菓吧（什锦味）",
+        "plu": 118103,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族水果沙拉香橙味",
+        "plu": 118073,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族水果沙拉菠萝味",
+        "plu": 118074,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族动物型果仔爽葡萄企鹅",
+        "plu": 118027,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族水果型果仔爽葡萄",
+        "plu": 118031,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族萌兽挂瓶草莓味【布丁】",
+        "plu": 118046,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族萌兽挂瓶香蕉味【布丁】",
+        "plu": 118047,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族萌冻炒酸奶（草莓味）",
+        "plu": 118161,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族萌冻炒酸奶（抹茶味）",
+        "plu": 118162,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族炒酸奶白桃味",
+        "plu": 118191,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族炒酸奶酸奶味",
+        "plu": 118192,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "盐津铺子蒟蒻满分布丁（白桃味）",
+        "plu": 6151075,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "盐津铺子蒟蒻满分布丁（草莓味）",
+        "plu": 6151076,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "盐津铺子蒟蒻满分布丁（芒果味）",
+        "plu": 6151077,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族（优的冻）香橙布甸",
+        "plu": 118168,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "小贵族（优的冻）草莓布甸",
+        "plu": 118170,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "孔多里多保龄球酸奶风味（草莓味）",
+        "plu": 279007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "孔多里多保龄球酸奶风味（芒果味）",
+        "plu": 279008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "优之佳瓶形蒟蒻果冻（荔枝味）",
+        "plu": 286002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "优之佳瓶形蒟蒻果冻（白桃味）",
+        "plu": 286003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "金冠蒟蒻果冻（草莓）",
+        "plu": 103030,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "金冠蒟蒻果冻（白桃）",
+        "plu": 103031,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "金冠奶酪布町草莓味",
+        "plu": 103034,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "金冠奶酪布町原味",
+        "plu": 103035,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新精选酸奶布丁（圆杯）草莓味",
+        "plu": 117091,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新精选芝士布丁经典原味",
+        "plu": 117092,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新【普通】玲珑果果冻苹果味",
+        "plu": 117050,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新【普通】玲珑果果冻荔枝味",
+        "plu": 117051,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新【普通】果粒棒果冻条荔枝味",
+        "plu": 117067,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "蜡笔小新【普通】果粒棒果冻条苹果味",
+        "plu": 117068,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记优钻小布酪果冻（葡萄）",
+        "plu": 5041001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记优钻趣欢欢（豹子桔子散）",
+        "plu": 5041026,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记优钻大慕诗果冻（草莓）",
+        "plu": 5041031,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记优钻大餐后果冻（樱桃）",
+        "plu": 5041033,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记优钻大布甸果冻（蜜桃）",
+        "plu": 5041040,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "徐福记益起C可吸散果冻（蓝莓味）",
+        "plu": 5041114,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎水果果冻（草莓味）",
+        "plu": 5010003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎水果果冻（芒果味）",
+        "plu": 5010004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎水果果冻（杨桃味）",
+        "plu": 5010005,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎乳酸果冻（菠萝味）",
+        "plu": 5010011,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎乳酸果冻（草莓味）",
+        "plu": 5010012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎乳酸果冻（香芋味）",
+        "plu": 5010013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎吸吸（菠萝味）",
+        "plu": 5010017,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎吸吸（苹果味）",
+        "plu": 5010018,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "喜之郎吸吸（草莓味）",
+        "plu": 5010019,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "康迪隆6角杯多肉酸奶（蜜桔味）",
+        "plu": 130012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "康迪隆6角杯多肉酸奶（黄桃味）",
+        "plu": 130013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "康迪隆可吸奶酪三角袋果冻香草味",
+        "plu": 130029,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "阿尔卑斯中圆杯果肉水果熟了芦荟味）",
+        "plu": 11091002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "阿尔卑斯新果肉果冻（黄桃果肉味）",
+        "plu": 11091008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "阿尔卑斯石花膏冻（蜂蜜味）",
+        "plu": 11091021,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "阿尔卑斯蒟蒻果冻（草莓味）",
+        "plu": 11091027,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "福佳香岩切芝士味面包",
+        "plu": 6079143,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "福佳香肉松海苔面包",
+        "plu": 6079148,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "福佳香烤芝士面包",
+        "plu": 6079153,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "卡尔顿液态奶蛋糕",
+        "plu": 1351002,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "卡尔顿芋香无边吐司",
+        "plu": 1351020,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "千焙屋可可慕斯双拼蛋糕",
+        "plu": 6063039,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "千焙屋超软吐司1",
+        "plu": 6063046,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "千焙屋黑麦软切吐司",
+        "plu": 6063049,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "零食剧场创意手作菜肉鸡蛋卷",
+        "plu": 11106001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "零食剧场创意手作芋泥蛋黄卷",
+        "plu": 11106002,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "都遇虎皮三角蛋糕",
+        "plu": 1311002,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "都遇南瓜肉松吐司",
+        "plu": 1311016,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "都遇牧场牛乳蛋糕",
+        "plu": 1311018,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "金佰禾/巴比熊核桃红枣蛋糕",
+        "plu": 6098105,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "唇动蛋糕（牛奶味）",
+        "plu": 1201001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "唇动蛋糕（草莓树莓味）",
+        "plu": 1201007,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "哈兰德肉松三明治蛋糕",
+        "plu": 1300001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "哈兰德肉肉脆蛋糕",
+        "plu": 1300009,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "哈兰德蛋黄三明治蛋糕肉松沙拉",
+        "plu": 1300013,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "橙子布丁蛋糕",
+        "plu": 1295030,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "休闲农场小被卷蛋糕红芝士奶茶味",
+        "plu": 1239021,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "休闲农场小被卷蛋糕肉松沙拉味",
+        "plu": 1239022,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "休闲农场霸道双陷三明治白桃椰蛋糕",
+        "plu": 1239027,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "港荣蒸蛋糕",
+        "plu": 1217001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "港荣柠草莓方型蛋糕",
+        "plu": 1217024,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "豪士肉松沙拉三明治面包",
+        "plu": 1203007,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "豪士蛋皮吐司",
+        "plu": 1203011,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "豪士大口袋面包（菠萝夹心）",
+        "plu": 1203001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "新格拉海苔鸡肉松面包 ",
+        "plu": 6023082,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "粒利多新格拉沙拉排包 ",
+        "plu": 6023083,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "米吧岩烧肉松蛋糕",
+        "plu": 6208030,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "米吧岩烧坚果蛋糕",
+        "plu": 6208031,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "友臣海盐芝士软欧",
+        "plu": 1212024,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "友臣好点肉松海苔面包",
+        "plu": 1212025,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "挞迪手工软麻花（蛋黄味）",
+        "plu": 1325001,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "挞迪手工软麻花（红豆味）",
+        "plu": 1325002,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "盐津铺子憨豆先生爸爸3零纯蛋糕",
+        "plu": 6151016,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "盐津铺子憨豆先生爸爸酸奶爆浆球面",
+        "plu": 6151063,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "沥发大三板蛋糕（抹茶）",
+        "plu": 1244007,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "沥发大三板蛋糕（巧克力）",
+        "plu": 1244008,
+        "itemType": 1,
+        "unitPrice": 33.6
+    },
+    {
+        "itemName": "南诺信盐焗鸡翅透明原味全翅",
+        "plu": 11047001,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信盐焗肥爪透明散装",
+        "plu": 11047003,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信盐焗凤爪",
+        "plu": 11047007,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信盐焗鸡脆皮翅（透明散装）",
+        "plu": 11047014,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信盐焗鸡腿透明散装",
+        "plu": 11047019,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信盐焗大凤爪",
+        "plu": 11047021,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "南诺信喜辣鸡丁散装",
+        "plu": 11047023,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "劲仔深海小鱼（卤香味）",
+        "plu": 11043003,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "劲仔深海小鱼（酱汁味）",
+        "plu": 11043004,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "鲜亦美劲道肉干（原味）",
+        "plu": 11098001,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "鲜亦美劲道肉干（香辣味）",
+        "plu": 11098002,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "多旺鱿鱼仔（香辣味）",
+        "plu": 11105003,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "多旺鱿鱼仔（烧烤味）",
+        "plu": 11105004,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "鱼山鱼海绝辣鱼尾巴",
+        "plu": 11057001,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "鱼山鱼海香辣鱼尾巴",
+        "plu": 11057002,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "今湘味网红牙签肉（牛肉味）",
+        "plu": 1079011,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "今湘味网红牙签肉（羊肉味）",
+        "plu": 1079012,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "果初乐菠萝蜜（散称）",
+        "plu": 7032004,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "果初乐每日蔬菜（散称）",
+        "plu": 7032017,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "果初乐原切薯条原味",
+        "plu": 7032018,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "祯香大块猪肉脯原味",
+        "plu": 1123021,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "祯香手撕肉干五香味",
+        "plu": 1123055,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "回味一梦散装手撕风干鸭脖（香辣味）",
+        "plu": 11100002,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "回味一梦散装手撕风干鸭脖（黑鸭味）",
+        "plu": 11100003,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "亿莱旺混合水果干",
+        "plu": 7020013,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "亿莱旺炭烧腰果",
+        "plu": 7020015,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "亿莱旺多彩坚果新",
+        "plu": 7020022,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "钢牙妹散装风干肉手抓包香辣味",
+        "plu": 11030013,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "钢牙妹散装风干肉手抓包五香味",
+        "plu": 11030014,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "香之派多味鸭掌",
+        "plu": 11067005,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "香之派虎皮鸡爪（五香味）",
+        "plu": 11067007,
+        "itemType": 1,
+        "unitPrice": 99.6
+    },
+    {
+        "itemName": "尚乐福三明治面包（咸奶酪）",
+        "plu": 1293025,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "焙味方核桃红枣蛋糕",
+        "plu": 7063008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "焙味方双拼抹茶蛋糕",
+        "plu": 7063020,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "焙味方牛乳风味夹心蛋糕",
+        "plu": 7063029,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "田田麦艾莎慕思蛋糕(草莓)",
+        "plu": 6025002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "田田麦韩式三明治",
+        "plu": 6025007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "田田麦咸蛋黄味蛋糕",
+        "plu": 6025018,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "田田麦欧式三明治",
+        "plu": 6025023,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米吧岩烧蛋黄鲜派面包",
+        "plu": 6208013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "津治-口袋蛋皮面包",
+        "plu": 7060015,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "津治-芋泥三明治面包",
+        "plu": 7060023,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "游世佳族石磨原味",
+        "plu": 7102001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "游世佳族岩烧原味",
+        "plu": 7102003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "爱思哒3+2紫米炼乳",
+        "plu": 6225007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "爱思哒蓝莓味蒸蛋糕",
+        "plu": 6225013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "爱思哒无蔗糖蒸蛋糕",
+        "plu": 6225027,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "味美欣魔方生吐司",
+        "plu": 1386004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家牛肉味薄饼蛋糕",
+        "plu": 7191002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家椰丝面包",
+        "plu": 7191004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家肉松棒蛋糕",
+        "plu": 7191006,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "恰焙龙黄蕉面包",
+        "plu": 7225001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "一麦番肉肉土司面包",
+        "plu": 7229002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "利欣牛奶味涂饰蛋糕",
+        "plu": 1354002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "曲滋乐牛乳小口袋（菠萝味）",
+        "plu": 1335006,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "曲滋乐水晶白米蛋糕（草莓味）",
+        "plu": 1335009,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "曲滋乐豆乳米汉堡蛋糕",
+        "plu": 1335012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "欧芭酸奶味冰皮蛋糕",
+        "plu": 689012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "欧芭芒果味冰皮蛋糕",
+        "plu": 689013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "欧芭草莓味冰皮蛋糕",
+        "plu": 689014,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦特旺岩烧芝士提子味",
+        "plu": 7065001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦特旺岩烧芝士红豆味",
+        "plu": 7065002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦特旺红豆麻花",
+        "plu": 7065007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "秀峰香肉松三明治半切",
+        "plu": 7196001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "秀峰香黑麦肉松三明治半切",
+        "plu": 7196002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "新月格格奶酪蜜豆面包",
+        "plu": 1363008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "新月格格贝果面包",
+        "plu": 1363009,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "逗泥海藻盐手工老蛋糕味",
+        "plu": 1344004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "逗泥厚切原味蛋糕吐司",
+        "plu": 1344011,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "玉强雪媚娘蛋糕（酸奶味）",
+        "plu": 7011013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "统享晨号菓蒸三文治蛋糕（紫薯芝士味）",
+        "plu": 7156006,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "食尚麦榴莲派蛋糕",
+        "plu": 1378010,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "食尚麦点一抹蛋糕卷",
+        "plu": 1378011,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "食尚麦点果味蛋糕杨枝甘露味",
+        "plu": 1378013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豆坊世嘉燕麦片（紫薯味）",
+        "plu": 5153004,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "豆坊世嘉玉米粉（红枣味）",
+        "plu": 5153010,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "龙王豆浆粉(黄豆原味)",
+        "plu": 5138001,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "龙王豆浆粉(黄豆甜味)",
+        "plu": 5138002,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "初春有雨小米薏米玄米燕麦片",
+        "plu": 5133006,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "初春有雨水果坚果燕麦片",
+        "plu": 5133007,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "初春有雨澳洲即食燕麦片",
+        "plu": 5133008,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谷物细雨红枣枸杞藕粉",
+        "plu": 5172004,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谷物细雨桂花坚果藕粉羹",
+        "plu": 5172009,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "谷物细雨玫瑰水果藕粉羹",
+        "plu": 5172010,
+        "itemType": 1,
+        "unitPrice": 37.6
+    },
+    {
+        "itemName": "胖Q（渝口福）山椒凤爪",
+        "plu": 1016001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "胖Q（渝口福）虎皮凤爪",
+        "plu": 1016002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "胖Q（渝口福）泡椒凤爪",
+        "plu": 1016036,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "乖浩翔散装卤鸭掌",
+        "plu": 1020002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "乖浩翔散装山椒鸭掌（透明）",
+        "plu": 1020039,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "乖浩翔散装蒜香鸭掌（透明）",
+        "plu": 1020041,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "乖浩翔散装蒜香凤爪（单）",
+        "plu": 1020185,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "橘子橘子解压食刻敢拼搏香脖（酱香）",
+        "plu": 1036002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "解压食刻鸭锁骨（香辣）",
+        "plu": 1036019,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "南诺信盐焗鸭翅中",
+        "plu": 11047004,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "南诺信盐焗鸡翅尖",
+        "plu": 11047006,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "南诺信盐焗鸡蛋",
+        "plu": 11047009,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "（渝口福）酱香烤腿",
+        "plu": 1016075,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "（渝口福）盐焗烤腿",
+        "plu": 1016076,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "咂咂嘴深海鱼仔（香辣味）",
+        "plu": 1018001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "咂咂嘴深海鱼仔（山椒味）",
+        "plu": 1018002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "咂咂嘴深海鱼仔（酸菜味）",
+        "plu": 1018004,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "咂咂嘴深海鱼仔（酱汁味）",
+        "plu": 1018005,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鲜本鲜鹌鹑蛋（卤铁蛋味）",
+        "plu": 1115002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鲜本鲜鹌鹑蛋（香辣味）",
+        "plu": 1115003,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鲜本鲜鹌鹑蛋（盐焗味）",
+        "plu": 1115004,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "华泽铁板鱿鱼（香辣）",
+        "plu": 1009035,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "华泽铁板鱿鱼（麻辣）",
+        "plu": 1009037,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "华泽铁板鱿鱼（蒜蓉味）",
+        "plu": 1009038,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "倍爽老姜凤爪",
+        "plu": 1001020,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "倍爽红椒凤爪",
+        "plu": 1001021,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "胖Q（渝口福）山椒猪皮",
+        "plu": 1016067,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "胖Q（渝口福）香辣猪皮",
+        "plu": 1016070,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鸭子飞了龙岩泡鸭爪（酸爽特辣）",
+        "plu": 11115001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鸭子飞了龙岩泡鸭翅（酸爽特辣）",
+        "plu": 11115002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鸭丫丫龙岩泡鸭爪",
+        "plu": 11097001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "鸭丫丫龙岩泡鸡爪",
+        "plu": 11097002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "哈心盐焗鸡爪（原味）",
+        "plu": 1087001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "哈心盐焗鸭掌（原味）",
+        "plu": 1087003,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "润进鱼仔（酱香味）透明",
+        "plu": 1039005,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "润进鱼仔（泡椒味）透明",
+        "plu": 1039006,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "解压时刻三粒鹌鹑蛋（盐焗味）",
+        "plu": 1036030,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "解压时刻三粒鹌鹑蛋（酱卤味）",
+        "plu": 1036032,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "欣帝小黄鱼烧烤味",
+        "plu": 11116001,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "欣帝小黄鱼香辣味",
+        "plu": 11116002,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "双汇小香肠（奥尔良味）",
+        "plu": 1047029,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "双汇小香肠（玉米味）",
+        "plu": 1047030,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "双汇润口香甜王（玉米风味）",
+        "plu": 1047031,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "双汇泡面拍档香肠",
+        "plu": 1047032,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "力诚台式香甜肠",
+        "plu": 1019036,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "力诚有辣度肠",
+        "plu": 1019038,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "力诚丸爆了（香辣味）",
+        "plu": 1019040,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "力诚匠烤好蛋盐焗鸡蛋退货",
+        "plu": 1019047,
+        "itemType": 1,
+        "unitPrice": 47.6
+    },
+    {
+        "itemName": "徐福记银致糕点威化饼{草莓}",
+        "plu": 5039112,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "徐福记银致糕点威化饼{芒果}",
+        "plu": 5039114,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "徐福记银致糕点（卷心酥）布丁味",
+        "plu": 5039090,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "徐福记银致糕点（卷心酥）奶油味",
+        "plu": 5039094,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "徐福记银致糕点米格玛{奶油玉米}",
+        "plu": 5039107,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "徐福记银致糕点米格玛{咸香芝士}",
+        "plu": 5039108,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "鲁旺人家蔓越莓西饼",
+        "plu": 6040062,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "鲁旺人家蓝莓西饼",
+        "plu": 6040064,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "鲁旺人家四根海苔卷肉松味",
+        "plu": 6040065,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "仟焙滋涂层饼干（草莓味）",
+        "plu": 7198001,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "仟焙滋巧蘑菇饼干（牛奶味）",
+        "plu": 7198004,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "仟焙滋跳跳糖麦丽素饼干（巧克力味）",
+        "plu": 7198005,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "优给奥利杯沾酱饼干牛奶味",
+        "plu": 5194002,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "优给麦薯条番茄味",
+        "plu": 5194003,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "嘉士利果乐果香草莓味果酱夹心饼",
+        "plu": 7080003,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "嘉士利果乐果香蓝莓味果酱夹心饼",
+        "plu": 7080004,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "真巧旋风筒（巧克力味+牛奶味）",
+        "plu": 7202001,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "法丽兹红丝绒草莓曲奇",
+        "plu": 6228011,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "法丽兹桂花乌龙味曲奇",
+        "plu": 6228012,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "法丽兹芝士巧克力味曲奇",
+        "plu": 6228014,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "旺日子雪饼",
+        "plu": 6043178,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "旺日子仙贝",
+        "plu": 6043179,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "盐津铺子焙烤薯片（青瓜味）",
+        "plu": 1023420,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "小王子坚强的土豆（醇香原味）",
+        "plu": 6120025,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "小王子坚强的土豆（清新番茄味）",
+        "plu": 6120026,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "奥利奥双果味夹心蓝莓+树莓味",
+        "plu": 6102001,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "奥利奥双果味夹葡萄+水蜜桃味",
+        "plu": 6102002,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "奥利奥冰淇淋夹心抹茶味",
+        "plu": 6102004,
+        "itemType": 1,
+        "unitPrice": 51.6
+    },
+    {
+        "itemName": "米祺尔老苏月（桂花味）",
+        "plu": 2013063,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米祺尔老苏月（黑芝麻味）",
+        "plu": 2013064,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米祺尔老苏月（肉松味）",
+        "plu": 2013065,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米祺尔老苏月（椒盐味）",
+        "plu": 2013066,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米祺尔老苏月（果仁味）",
+        "plu": 2013067,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "米祺尔老苏月（冰糖味）",
+        "plu": 2013068,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩精致苏月椒盐",
+        "plu": 7051024,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩精致苏月五仁",
+        "plu": 7051025,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩精致苏月冰糖",
+        "plu": 7051027,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩精致苏月黑芝麻",
+        "plu": 7051028,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘉乐轩精致苏月椰蓉",
+        "plu": 7051041,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（草莓）",
+        "plu": 5013008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（凤梨）",
+        "plu": 5013009,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（哈密瓜）",
+        "plu": 5013010,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（水蜜桃）",
+        "plu": 5013011,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（甜橙）",
+        "plu": 5013012,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（榴莲）",
+        "plu": 5013015,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（水果五仁）",
+        "plu": 5013063,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港佳华散称水果月饼（芝麻味）",
+        "plu": 5013064,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "阿尔卑斯焦香原味牛奶硬糖",
+        "plu": 5032009,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "阿尔卑斯沁爽柠檬",
+        "plu": 5032010,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "阿尔卑斯香草可乐牛奶硬糖",
+        "plu": 5032029,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "徐福记金致糖（乌梅汁夹心糖）散糖",
+        "plu": 5036092,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "徐福记金致糖（荔枝味果汁夹心糖）散糖",
+        "plu": 5036094,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "小杨铺子陈皮橄榄",
+        "plu": 5134015,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "小杨铺子九制香榄",
+        "plu": 5134016,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "南国特浓椰子糖",
+        "plu": 261001,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "南国榴莲软质糖",
+        "plu": 261005,
+        "itemType": 1,
+        "unitPrice": 45.6
+    },
+    {
+        "itemName": "泡吧甜甜圈蛋糕（香橙味）",
+        "plu": 6027090,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "哈兰德云石圈层面包（巧克力味）",
+        "plu": 1300019,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "哈兰德汉堡面包",
+        "plu": 1300004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "哈兰德黑麦无蔗糖肉松三明治蛋糕",
+        "plu": 1300002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "泡吧椰丝酥皮面包",
+        "plu": 6027074,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豪士蛋皮吐司",
+        "plu": 1203011,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豪士红豆原粒吐司",
+        "plu": 1203005,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "泡吧沙拉软蛋糕",
+        "plu": 6027095,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "友臣海盐芝士软欧",
+        "plu": 1212024,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豪士早餐吐司",
+        "plu": 1203002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港荣乳酸吐司蓝莓味蛋糕",
+        "plu": 1217010,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豪士芝士小小面包",
+        "plu": 1203004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "图牛芋泥啵啵三明治面包",
+        "plu": 6034060,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港荣柠檬果汁方型蛋糕",
+        "plu": 1217022,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "都遇牧场牛乳蛋糕",
+        "plu": 1311018,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港荣蒸蛋糕",
+        "plu": 1217001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "泡吧冰淇淋蛋糕（香草鸡蛋）",
+        "plu": 6027001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "泡吧熊仔蛋糕",
+        "plu": 6027015,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "友臣好点肉松海苔面包",
+        "plu": 1212025,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "都遇虎皮三角蛋糕",
+        "plu": 1311002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "豪士大口袋面包（菠萝夹心）",
+        "plu": 1203001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "菲尔仕无蔗糖纯吐司蛋糕",
+        "plu": 6240039,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "挞迪手工软麻花（蛋黄味）",
+        "plu": 1325001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "福佳香肉松海苔面包",
+        "plu": 6079148,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "泡吧果仁蛋糕",
+        "plu": 6027003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "丫嘟烤仙草蛋糕",
+        "plu": 6051028,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "图牛黑麦培根三明治面包",
+        "plu": 6034059,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "卡尔顿纯吐司",
+        "plu": 1351007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "福佳香蜜丝雪芙（卡）面包",
+        "plu": 6079152,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "福佳香软撕手工面包（蔓越莓味）",
+        "plu": 6079141,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "哈兰德肉松三明治蛋糕",
+        "plu": 1300001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "港荣蓝莓灌心蒸蛋糕",
+        "plu": 1217002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "新月格格可口雪芙面包",
+        "plu": 1363007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "津田洋子棒棒糕",
+        "plu": 1318005,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "味美欣肉松面包卷沙拉味",
+        "plu": 1386001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "田田麦手工鸡蛋糕",
+        "plu": 6025014,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "优时乐肉松哆哆厚切面包（海盐芝士）",
+        "plu": 7184004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "沥发大三板蛋糕（抹茶）",
+        "plu": 1244007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "尚乐福三明治面包（水蜜桃）",
+        "plu": 1293024,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "逗泥海藻盐手工老蛋糕味",
+        "plu": 1344004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "一麦番肉肉土司面包",
+        "plu": 7229002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "统享晨号菓蒸三文治蛋糕（紫薯芝士味）",
+        "plu": 7156006,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "艾思利海苔肉松面包",
+        "plu": 7189005,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家牛肉味薄饼蛋糕",
+        "plu": 7191002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦可佳艾草糯米团（红豆）",
+        "plu": 5128003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "味美欣魔方生吐司",
+        "plu": 1386004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "统享晨号错别字蒸蛋糕（抹茶豆乳味）",
+        "plu": 7156003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "一麦番黄油松饼",
+        "plu": 7229001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "津田洋子老上海无蔗糖鸡蛋糕",
+        "plu": 1318002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "新月格格奶酪蜜豆面包",
+        "plu": 1363008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "艾思利咸味味肉松吐司面包",
+        "plu": 7189002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家铁板烤肉面包",
+        "plu": 7191003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "沥发大三板蛋糕（巧克力）",
+        "plu": 1244008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "尚乐福三明治面包（杨枝甘露味）",
+        "plu": 1293026,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "游世佳族岩烧原味",
+        "plu": 7102003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "游世佳族岩烧芒果味",
+        "plu": 7102004,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "焙味方炼乳咸味蛋糕",
+        "plu": 7063028,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "回头客铜锣烧（红豆味）",
+        "plu": 6011007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "嘟u嘟u咸蛋黄大面包",
+        "plu": 1303009,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "玉强雪媚娘蛋糕（酸奶味）",
+        "plu": 7011013,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "达利园瑞士卷（香蕉味）",
+        "plu": 5102066,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦特旺红豆麻花",
+        "plu": 7065007,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "卡侬尼华夫饼鸡蛋味 ",
+        "plu": 6011035,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦特旺岩烧芝士红豆味",
+        "plu": 7065002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "味美欣水牛乳蛋白棒面包白桃芝士味",
+        "plu": 1386003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "达利园瑞士卷（香橙）",
+        "plu": 5102067,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "焙味方核桃红枣蛋糕",
+        "plu": 7063008,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "吉利人家肉松多多面包",
+        "plu": 7191005,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "达利园瑞士卷（巧克力味）",
+        "plu": 5102064,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "津常尝全麦味面包",
+        "plu": 7155002,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "麦可佳艾草糯米团（蛋黄肉松）",
+        "plu": 5128001,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "艾思利蛋挞面包乳酪味",
+        "plu": 7189003,
+        "itemType": 1,
+        "unitPrice": 27.6
+    },
+    {
+        "itemName": "菲尔仕糯紫米吐司",
+        "plu": 6240006,
+        "itemType": 1,
+        "unitPrice": 27.6
+    }
+]

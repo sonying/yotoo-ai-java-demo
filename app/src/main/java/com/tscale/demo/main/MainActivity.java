@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Build;
@@ -145,6 +147,13 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private String matchingTag = "";
 
     // Tscale add args ================
+    private static final int TEXTSTYLE_NORMAL = 0;
+    private static final int TEXTSTYLE_BOLD = 1;
+    private static final int TEXTSTYLE_UNDERLINE = 2;
+    private static final int TEXTSTYLE_HIGHLIGHT = 4;
+    private static final int TEXTSTYLE_STRIKETHROUGH = 8;
+    private final int LABEL_WIDTH_432 = 432;
+    private final int LABEL_HEIGHT_432 = 432;
     private Button clear_to_zero;
     private ImageView zeroStatus;
     private ImageView stableStatus;
@@ -156,8 +165,8 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private static boolean flag = false;
     private static int baudrate = 9600;
     private JNIScale mScale = JNIScale.getScale(baudrate);
-    //private JNIScale mScale = JNIScale.getScale(115200);
     long onWeightUpdate_startTime = 0;
+    long onRightAuxButtonClicked_startTime = 0;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
     private final static String SHART = "data";
@@ -174,6 +183,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         initView();
         try{
             TSLanguageSettings.updateLocaleLanguage(this);
+            //注冊稱重
             mScale.setCallback(this);
             TSLog.setDebug(false);
             sharedPreferences = getSharedPreferences(SHART, Activity.MODE_PRIVATE);
@@ -184,7 +194,11 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             } else {
                 editor.putBoolean("tareStatus", false).commit();
             }
+            //注冊打印
             printer = getUSBPrinter();
+            boolean status = printer.usbConnect();
+            printer.enableLabel(true);
+            printer.setPaperRecycle(true);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -446,14 +460,13 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         //监听识别结果，so初始化的回调,正式的code和key请联系由由商务
         YoyoSdkConfig config = new YoyoSdkConfig();
 
-//        config.setUseProxy(false); //是否启用代理，false-不启用，true启用
-//        config.setDefaultProxyAccount("yoyo");//代理服务器的帐号
-//        config.setDefaultProxyPassword("yoyo1234");//代理服务器的密码
-//        config.setDefaultProxyIp("0.0.0.0");//代理服务器的IP
-//        config.setDefaultProxyPort(8000); //代理服务器的端口
+        config.setUseProxy(false); //是否启用代理，false-不启用，true启用
+        config.setDefaultProxyAccount("yoyo");//代理服务器的帐号
+        config.setDefaultProxyPassword("yoyo1234");//代理服务器的密码
+        config.setDefaultProxyIp("0.0.0.0");//代理服务器的IP
+        config.setDefaultProxyPort(8000); //代理服务器的端口
         //上面需要先启用代理，并设备正确的代理服务器信息，方可进行访问外网
-//        config.setLoadSoDynamically(false);//使用静态加载方式加载so
-
+        config.setLoadSoDynamically(false);//使用静态加载方式加载so
 
         YoYoUtils.init(MainActivity.this, new InitRequest("台衡紧密测控(昆山)有限公司\t生鲜\tTH", "ae28e6fa784c9ede049b8ac7d8bcbce4"), new IYoYoAiListener() {
             @Override
@@ -510,7 +523,12 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 }
             }
 
-        }, config);
+        }, config, new IYoyoSdkInitListener() {
+            @Override
+            public void onSOInitSuccess(Reply<?> reply) {
+
+            }
+        });
     }
 
     //申请Android11权限
@@ -551,26 +569,17 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private void doTransData() {
         ThreadManager.getExecutorService().execute(() -> {
             //读取演示数据 文件路径assets/transferData
-            String data = IconMatchUtils.INSTANCE.readJson("transferData", MainActivity.this);
+            String data = IconMatchUtils.INSTANCE.readJson("fpTransferData", MainActivity.this);
             List<YoYoItemInfo> itemInfoList = JSON.parseArray(data, YoYoItemInfo.class);
-//            List<YoYoItemInfo> itemInfoList = GsonUtils.getGson().fromJson(data, new TypeToken<List<YoYoItemInfo>>() {
-//            }.getType());
-
-           /* List<YoYoItemInfo> itemInfoList = new ArrayList<>();
-            for (int i =0 ;i<200;i++){
-                YoYoItemInfo info = new YoYoItemInfo();
-                info.plu = "100"+i;
-                info.itemCode = "100"+i;
-                info.itemName = "红富士"+i;
-                info.isOn = 1;
-                info.isLock = 0;
-                info.unitType = PriceUnitType.NumberType;
-                info.unitPrice = 1000;
-                itemInfoList.add(info);
-            }*/
+            for (YoYoItemInfo yoYoItemInfo : itemInfoList) {
+                yoYoItemInfo.setIsOn(1);
+                yoYoItemInfo.setIsLock(0);
+                yoYoItemInfo.unitType = PriceUnitTypeEnum.WeightType;
+                yoYoItemInfo.itemCode = yoYoItemInfo.plu;
+                yoYoItemInfo.unitPrice = yoYoItemInfo.unitPrice * 100;
+            }
             YoYoUtils.setScaleData(new ScaleDataRequest(itemInfoList, true, ScaleTypeEnum.Increments));
         });
-
 
     }
 
@@ -605,6 +614,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     protected void onStart() {
         mScale = JNIScale.getScale(baudrate);
         mScale.setCallback(this);
+        //printer = getUSBPrinter();
         TSLog.console(TSLog.i, "onStart");
         super.onStart();
     }
@@ -622,6 +632,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         if (EventBus.getDefault().isRegistered(this))
             EventBus.getDefault().unregister(this);
         YoYoUtils.saveStudyData();
+        printer.disconnect();
 //        YoYoUtils.unInit();
         Process.killProcess(Process.myPid());
     }
@@ -649,15 +660,14 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 llTips.setVisibility(View.VISIBLE);
                 listView.setVisibility(View.GONE);
                 salePriceDesc.setText("元/kg");
-                tvTips.setText("装载台面上空空如也～\n\n" +
-                        "请放置您要秤量的商品，小由帮您快速识别～");
+                tvTips.setText("请放置您要秤量的商品，小由帮您快速识别～");
             }
             updateView();
         });
     }
 
     private void updateWeight(int weight) {
-        Log.i("updateWeight","updateWeight:" + weight );
+        //Log.i("updateWeight","updateWeight:" + weight );
         int d1 = weight / 1000;
         int d2 = weight % 1000;
         boolean isF = d2 < 0;
@@ -787,11 +797,56 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
 
         llTips.setVisibility(View.VISIBLE);
         listView.setVisibility(View.GONE);
-        Log.d("MainActivity", "您点击了" + info.itemName);
+        Log.d("MainActivity", "您点击了" + info.itemName + ",tupian:" + info.tupian);
 
         //设置点击单价和总价
         updateView();
         updateWeight(weight);
+        //調用打印
+        printer_iteminfo(info,request);
+    }
+
+    //Only test by HPRT Label Printer USB
+    public void printer_iteminfo(YoYoItemInfo info,AiMarkRequest request) {
+        String plu = info.plu;
+        String itemName = info.itemName;
+        String Sum_cost = sum1.getText().toString() + sum2.getText().toString();
+        String Single_cost = price1.getText().toString() + price2.getText().toString();
+        String Weight_l = tv_top_amount.getText().toString() + tv_top_amount_2.getText().toString();
+        final int fontSize = 20;
+/*
+        Log.i("printer_iteminfo","plu:" + plu);
+        Log.i("printer_iteminfo","itemName:" + itemName);
+        Log.i("printer_iteminfo","Sum_cost:" + Sum_cost);
+        Log.i("printer_iteminfo","Single_cost:" + Single_cost);
+        Log.i("printer_iteminfo","Weight_l:" + Weight_l);
+*/
+        TSLog.console(TSLog.d, "Image Print Test Clicked..");
+        if( this.printer != null ) {
+            //Log.i("printer_iteminfo","printer is not null!!");
+            this.printer.pageBegin(0, 0, LABEL_WIDTH_432, LABEL_HEIGHT_432, 0);
+            try {
+                InputStream file = getResources().openRawResource(R.raw.er);
+                Bitmap image = BitmapFactory.decodeStream(file);
+                file.close();
+                this.printer.addText(60, 60, 0, TEXTSTYLE_BOLD, "台衡精密测控股份有限公司");
+                this.printer.addText(10, 120, 0, 0, "PLU编号:" + plu);
+                this.printer.addText(10, 180, 0, 0, "产品名称:" + itemName);
+                this.printer.addText(10, 240, 0, 0, "单价:" + Single_cost + " rmb/kg  重量:" + Weight_l + " kg");
+                //this.printer.addText(10, 220, 22, 0, "CODE128");
+                //this.printer.addBarcode(10, 160, 8, 50, 2, 0, "This Is CODE128".getBytes());
+                this.printer.addText(10, 400, fontSize, TEXTSTYLE_BOLD, "总价：" + Sum_cost + " RMB");
+                this.printer.addBitmapImage(image, 280, 430);
+                this.printer.pagePrint(1);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //this.printer.pageEnd();
+            //this.printer.pagePrint(1);
+            //this.printer.reset();
+        }else{
+            Log.i("printer_iteminfo","Error ,printer is null!");
+        }
     }
 
     // tscale functions
@@ -849,14 +904,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                /*
-                if (hasReturnedZero) {
-                    if (!mScale.getZeroFlag()) {
-                        Toast.makeText(MainActivity.this, "QUICK STABLE TRIGGERED!", Toast.LENGTH_SHORT).show();
-                    }
-                    hasReturnedZero = false;
-                }
-                */
+
             }
         });
     }
@@ -874,14 +922,12 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                         device.getVendorId(), device.getProductId());
                 TSLog.console(TSLog.d, devInfo);//VID:0EEF PID:0001
                 TSLog.console(TSLog.d, "USBID:" + device.getProductId() + "----" + device.getVendorId());
-                //AAA
                 if (device.getVendorId() == TScaleLabel.CAYSN_LABEL_VENDOR_ID &&
                         device.getProductId() == TScaleLabel.CAYSN_LABEL_PRODUCT_ID) {
                     TSLog.console(TSLog.i, "Caysn Label Printer USB Found.");
                     Log.i("getUSBPrinter","Caysn Label Printer USB Found.");
                     return new CaysnLabelPrinter(this, TScaleLabel.TYPE_USB);
                 }
-                //BBB
                 if (device.getVendorId() == TScaleReceipt.CAYSN_T9_VID &&
                         device.getProductId() == TScaleReceipt.CAYSN_T9_PID) {
                     TSLog.console(TSLog.i, "Caysn T8 Label Printer USB Found.");
@@ -889,7 +935,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                     flag = true;
                     return new CaysnLabelPrinter(this, TScaleLabel.TYPE_USB);
                 }
-                //CCC
                 if (device.getVendorId() == TScaleLabel.HPRT_LABEL_VENDOR_ID &&
                         device.getProductId() == TScaleLabel.HPRT_LABEL_PRODUCT_ID) {
                     TSLog.console(TSLog.i, "HPRT Label Printer USB Found.");
@@ -914,6 +959,35 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     @Override
     public void onRightAuxButtonClicked() {
         //Toast.makeText(this, "right aux keyboard!", Toast.LENGTH_SHORT).show();
+        if( onRightAuxButtonClicked_startTime == 0 ) {
+            onRightAuxButtonClicked_startTime = SystemClock.elapsedRealtime();
+            if (!(printer.getClass().getSimpleName().equals("HPRTLabelPrinter")) && !printer.getHasPaperStatus()) {
+                Toast.makeText(this, "The printer is out of paper", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (!printer.getPaperPeeledStatus()) {
+                Toast.makeText(this, "The printer paper is not removed", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            printer.feedLabel();
+        }else{
+            long endTime = SystemClock.elapsedRealtime();
+            if( endTime - onRightAuxButtonClicked_startTime > 1000 ){
+                onRightAuxButtonClicked_startTime = endTime;
+                if (!(printer.getClass().getSimpleName().equals("HPRTLabelPrinter")) && !printer.getHasPaperStatus()) {
+                    Toast.makeText(this, "The printer is out of paper", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!printer.getPaperPeeledStatus()) {
+                    Toast.makeText(this, "The printer paper is not removed", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                printer.feedLabel();
+            }else{
+                //TSLog.console(TSLog.i, "not more 100ms then do nothing");
+            }
+            //onWeightUpdate_startTime = endTime;
+        }
     }
 
     @Override
