@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Build;
@@ -89,6 +90,7 @@ import cn.smart.yoyolib.utils.NavigationBarUtils;
 import cn.smart.yoyolib.utils.PathConstant;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
 
 //import com.tscale.scale.exceptionCrashHandler.CrashHandler;
 //import com.tscale.scale.utils.Utils;
@@ -117,6 +119,7 @@ import com.davidmiguel.numberkeyboard.NumberKeyboardListener;
 
 public class MainActivity extends AppCompatActivity implements ResultItemAdapter.ActionItemListener , TADCallback, NumberKeyboardListener {
 
+    private static final String SHOWCASE_ID = "99248215793";
     private TextView price1;
     private TextView price2;
 
@@ -202,6 +205,15 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         } catch (Exception e) {
             e.printStackTrace();
         }
+        new MaterialShowcaseView.Builder(this)
+                .setTarget(button)
+                .setTitleText(R.string.ShowcaseView_title)
+                .setDismissText(R.string.ShowcaseView_dis)
+                .setDelay(100) // optional but starting animations immediately in onCreate can make them choppy
+                .singleUse(SHOWCASE_ID) // provide a unique ID used to ensure it is only shown once
+                .renderOverNavigationBar()
+                .setTargetTouchable(true)
+                .show();
     }
 
     private void initView() {
@@ -632,8 +644,9 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         if (EventBus.getDefault().isRegistered(this))
             EventBus.getDefault().unregister(this);
         YoYoUtils.saveStudyData();
-        printer.disconnect();
-//        YoYoUtils.unInit();
+        if(printer != null)
+            printer.disconnect();
+//      YoYoUtils.unInit();
         Process.killProcess(Process.myPid());
     }
 

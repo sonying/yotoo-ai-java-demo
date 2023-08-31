@@ -380,4 +380,6 @@
     <string name="sc_set_weight">+添加特定皮重</string>
     <string name="sc_add_weight">+皮重</string>
 
+    <string name="ShowcaseView_title">由图识别系统温馨提醒您\n\n进入设置页面激活服务并调整摄像机识别范围后方可使用</string>
+    <string name="ShowcaseView_dis">知道了</string>
 </resources>
