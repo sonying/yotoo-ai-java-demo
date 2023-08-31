@@ -349,20 +349,10 @@
                 android:layout_marginTop="10pt"
                 android:gravity="center"
                 android:orientation="horizontal">
-            <TextView
-                android:id="@+id/search"
-                android:layout_width="240pt"
-                android:layout_height="70pt"
-                android:layout_marginEnd="30pt"
-                android:background="@drawable/shape_stroke_2d"
-                android:gravity="center"
-                android:text="商品搜索( F )"
-                android:textColor="#33C5A5"
-                android:textSize="30pt" />
 
             <TextView
                 android:id="@+id/reCapture"
-                android:layout_width="240pt"
+                android:layout_width="510pt"
                 android:layout_height="70pt"
                 android:background="@drawable/shape_bg_2d_8"
                 android:gravity="center"
@@ -647,6 +637,19 @@
                     android:layout_marginEnd="40pt"
                     android:background="@drawable/shape_bg_2d_8"
                     />
+
+                <ImageView
+                    android:id="@+id/setup_app_into"
+                    android:layout_width="70pt"
+                    android:layout_height="70pt"
+                    android:layout_marginEnd="40pt"
+                    android:src="@mipmap/gear"/>
+
+                <ImageView
+                    android:id="@+id/web_to_yoyo"
+                    android:layout_width="70pt"
+                    android:layout_height="70pt"
+                    android:src="@mipmap/web"/>
             </LinearLayout>
 
             <LinearLayout

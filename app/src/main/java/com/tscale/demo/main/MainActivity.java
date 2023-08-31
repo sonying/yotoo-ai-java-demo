@@ -38,6 +38,8 @@ import com.blankj.utilcode.util.FileIOUtils;
 import com.blankj.utilcode.util.FileUtils;
 import com.blankj.utilcode.util.GsonUtils;
 import com.google.gson.Gson;
+import com.next.androidintentlibrary.BrowserIntents;
+import com.next.androidintentlibrary.SettingIntents;
 import com.yoyo.ui.common.enums.MarkTypeEnum;
 import com.yoyo.ui.common.enums.PriceUnitTypeEnum;
 import com.yoyo.ui.common.enums.RecognitionModelEnum;
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private TextView commodityManager;
     private ImageView button;
     private TextView reCapture;
-    private TextView search;
+    //private TextView search;
     private String matchingTag = "";
 
     // Tscale add args ================
@@ -161,6 +163,10 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private ImageView zeroStatus;
     private ImageView stableStatus;
     private ImageView tareStatus;
+    private ImageView search_items;
+    private ImageView favorite_lists;
+    private ImageView setup_app_into;
+    private ImageView web_to_yoyo;
     private TextView tare_func;
     private TextView weightDesc;
     private boolean tszar = false;
@@ -222,6 +228,10 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         btnGetShopInfo = findViewById(R.id.btn_get_shop_info);
         btnUpdateShopInfo = findViewById(R.id.btn_update_shop_info);
         btnSetCameraPoint = findViewById(R.id.btn_set_camera_point);
+        search_items = findViewById(R.id.search_l);
+        favorite_lists = findViewById(R.id.favorite_l);
+        setup_app_into = findViewById(R.id.setup_app_into);
+        web_to_yoyo = findViewById(R.id.web_to_yoyo);
 
         numberKeyboard = findViewById(R.id.numberKeyboard);
         price1 = findViewById(R.id.tv_top_unit_price);
@@ -253,7 +263,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         listView.setAdapter(resultItemAdapter);
         button = findViewById(R.id.bt);
         reCapture = findViewById(R.id.reCapture);
-        search = findViewById(R.id.search);
+        //search = findViewById(R.id.search);
         //设置搜索最大数量,不设置默认-1为全部
         //DictionaryUtil.getInstance().setSearchSize(20);
         //申请权限，初始化，下载so等
@@ -278,9 +288,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             isSearch = false;
         });
 
-        //打开搜索键盘搜索商品
-        search.setOnClickListener(v -> checkSearch());
-
+        search_items.setOnClickListener(v -> checkSearch());
         //保存学习记录，客户根据自己的逻辑调用此方法
         saveLearning.setOnClickListener(v -> {
             Reply<?> reply = YoYoUtils.saveStudyData();
@@ -466,6 +474,14 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         });
 
         numberKeyboard.setListener(this);
+
+        setup_app_into.setOnClickListener(v -> {
+            SettingIntents.from(this).setting().show();
+        });
+
+        web_to_yoyo.setOnClickListener(v -> {
+            BrowserIntents.from(this).openLink("http://www.yoyo.link/").show();
+        });
     }
 
     private void initSdk() {
@@ -558,16 +574,20 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     }
 
     private void checkSearch() {
-        if (!isSearch) {
-            llSearch.setVisibility(View.VISIBLE);  //tag_keyboard
-            isSearch = true;
-        } else {
-            llSearch.setVisibility(View.GONE);
-            resultItemAdapter.updateData(new ArrayList<>());
-            isSearch = false;
-            EventBus.getDefault().post(new MessageEvent(""));
-            listView.setVisibility(View.GONE);
-            llTips.setVisibility(View.VISIBLE);
+        if( this.weight > 0) {
+            if (!isSearch) {
+                llSearch.setVisibility(View.VISIBLE);  //tag_keyboard
+                isSearch = true;
+            } else {
+                llSearch.setVisibility(View.GONE);
+                resultItemAdapter.updateData(new ArrayList<>());
+                isSearch = false;
+                EventBus.getDefault().post(new MessageEvent(""));
+                listView.setVisibility(View.GONE);
+                llTips.setVisibility(View.VISIBLE);
+            }
+        }else{
+            Toast.makeText(this, "無重量！！", Toast.LENGTH_SHORT).show();
         }
     }
 
