@@ -23,7 +23,7 @@ allprojects {
         maven { url "https://jitpack.io" }
         maven {
             allowInsecureProtocol = true
-            url "http://nexus.yoyo.link/repository/YoyoAndroidSdk/" }//配置由由的maven
+            url "http://nexus.yoyo.link/repository/YoyoAndroidSdk/" }
     }
 }
 

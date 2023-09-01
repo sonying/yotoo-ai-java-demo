@@ -12,8 +12,8 @@ android {
         applicationId 'com.tscale.demo'
         minSdk 27
         targetSdk 31
-        versionCode 3
-        versionName "3.4.0"
+        versionCode 4
+        versionName "3.5.0"
         ndk {
             abiFilters 'armeabi-v7a'
         }
@@ -73,6 +73,7 @@ dependencies {
     implementation('yoyo-sdk:yoyo:3.7.2.9') {
         exclude module: 'support-v4'
     }
+    implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.github.mohammadima3oud:Android-Intent-Library:1.0.0'
     implementation 'com.github.deano2390:MaterialShowcaseView:1.3.7'
     implementation 'com.github.unverbraucht:number-keyboard:v3.0.4'
@@ -81,9 +82,4 @@ dependencies {
     implementation files('libs/armeabi-v7a/tsprinter-release.aar')
     implementation files('libs/armeabi-v7a/tsscale-release.aar')
     implementation files('libs/armeabi-v7a/tsutil-release.aar')
-    //implementation(name: 'libserial-release', ext: 'aar')
-    //implementation(name: 'tslog-release', ext: 'aar')
-    //implementation(name: 'tsprinter-release', ext: 'aar')
-    //implementation(name: 'tsscale-release', ext: 'aar')
-    //implementation(name: 'tsutil-release', ext: 'aar')
 }

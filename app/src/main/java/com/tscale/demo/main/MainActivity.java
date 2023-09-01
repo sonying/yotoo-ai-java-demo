@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Process;
 import android.os.SystemClock;
+import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -38,6 +39,8 @@ import com.blankj.utilcode.util.FileIOUtils;
 import com.blankj.utilcode.util.FileUtils;
 import com.blankj.utilcode.util.GsonUtils;
 import com.google.gson.Gson;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import com.next.androidintentlibrary.BrowserIntents;
 import com.next.androidintentlibrary.SettingIntents;
 import com.yoyo.ui.common.enums.MarkTypeEnum;
@@ -124,13 +127,10 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private static final String SHOWCASE_ID = "99248215793";
     private TextView price1;
     private TextView price2;
-
     private TextView tv_top_amount;
     private TextView tv_top_amount_2;
-
     private TextView sum1;
     private TextView sum2;
-
     private TextView salePriceDesc;
     private RecyclerView listView;
     private ResultItemAdapter resultItemAdapter;
@@ -138,13 +138,11 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private int weight = 0;
     private LinearLayout llSearch;
     private boolean isSearch = false;
-
     private LinearLayout llTips;
     private TextView tvTips;
     private TextView saveLearning, getLearning, setLearning;
     private AppCompatButton btnActivate, btnGetSdkVersion, btnGetShopInfo, btnUpdateShopInfo, btnSetCameraPoint;
     private TextView studyMoudle;
-
     private TextView commodityManager;
     private ImageView button;
     private TextView reCapture;
@@ -181,6 +179,52 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     private final static String SHART = "data";
     private NumberKeyboard numberKeyboard;
 
+    public class favorite_item_class {
+        @SerializedName("plu")
+        @Expose
+        private String plu;
+        @SerializedName("itemName")
+        @Expose
+        private String itemName;
+        @SerializedName("unitPrice")
+        @Expose
+        private Integer unitPrice;
+        @SerializedName("tupian")
+        @Expose
+        private String tupian;
+
+        public String getplu() {
+            return plu;
+        }
+
+        public void setplu(String plu_s) {
+            this.plu = plu_s;
+        }
+
+        public String getitemName() {
+            return itemName;
+        }
+
+        public void setitemName(String item_Name) {
+            this.itemName = item_Name;
+        }
+
+        public Integer getunitPrice() {
+            return unitPrice;
+        }
+
+        public void setunitPrice(Integer unit_Price) {
+            this.unitPrice = unit_Price;
+        }
+
+        public String gettupian() {
+            return tupian;
+        }
+
+        public void settupian(String tupian_url) {
+            this.tupian = tupian_url;
+        }
+    }
     // Tscale add args end ==========
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -211,6 +255,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         new MaterialShowcaseView.Builder(this)
                 .setTarget(button)
                 .setTitleText(R.string.ShowcaseView_title)
@@ -220,6 +265,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 .renderOverNavigationBar()
                 .setTargetTouchable(true)
                 .show();
+
     }
 
     private void initView() {
@@ -263,7 +309,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         listView.setAdapter(resultItemAdapter);
         button = findViewById(R.id.bt);
         reCapture = findViewById(R.id.reCapture);
-        //search = findViewById(R.id.search);
         //设置搜索最大数量,不设置默认-1为全部
         //DictionaryUtil.getInstance().setSearchSize(20);
         //申请权限，初始化，下载so等
@@ -277,17 +322,15 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         button.setOnClickListener(v -> YoYoUtils.startYoYoActivity(MainActivity.this, YoYoActivityTagEnum.SETTING));
         //学习模式
         studyMoudle.setOnClickListener(v -> YoYoUtils.startYoYoActivity(MainActivity.this, YoYoActivityTagEnum.STUDY));
-
         //点击识别按钮进行拍照识别
         reCapture.setOnClickListener(v -> {
-            YoYoUtils.aiMatching(new AIMatchingRequest(0, WeightStableEnum.WeightStable, RecognitionModelEnum.Forcibly));
+            YoYoUtils.aiMatching(new AIMatchingRequest(weight, WeightStableEnum.WeightStable, RecognitionModelEnum.Forcibly));
             //置空搜索框值，隐藏键盘
-
             EventBus.getDefault().post(new MessageEvent(""));
             llSearch.setVisibility(View.GONE);
             isSearch = false;
         });
-
+        //手動尋找品項
         search_items.setOnClickListener(v -> checkSearch());
         //保存学习记录，客户根据自己的逻辑调用此方法
         saveLearning.setOnClickListener(v -> {
@@ -298,7 +341,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 Toast.makeText(MainActivity.this, "保存失败", Toast.LENGTH_LONG).show();
             }
         });
-
 
         btnSetCameraPoint.setOnClickListener(v -> {
             DemoDialog dialog = new DemoDialog();
@@ -328,6 +370,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             });
             dialog.show(getSupportFragmentManager(), "point");
         });
+
         btnActivate.setOnClickListener(v -> {
             DlgInputCode inputCode = new DlgInputCode();
             inputCode.setListener(s -> {
@@ -356,6 +399,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             });
             inputCode.show(getSupportFragmentManager(), "doCloudActivate");
         });
+
         btnGetSdkVersion.setOnClickListener(v -> {
             Reply<?> reply = YoYoUtils.getSDKVersion();
             if (reply.getCode() == ReplyCode.Success) {
@@ -365,6 +409,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 Toast.makeText(MainActivity.this, "获取版本失败", Toast.LENGTH_LONG).show();
             }
         });
+
         btnUpdateShopInfo.setOnClickListener(v -> {
             DemoDialog dialog = new DemoDialog();
             Bundle bundle = new Bundle();
@@ -388,7 +433,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                             }
                         }
                     }
-
                     @Override
                     public void onEventActivityFailure(@Nullable Reply<ErrorInfo> reply) {
                         Toast.makeText(MainActivity.this, "更新失败", Toast.LENGTH_LONG).show();
@@ -398,7 +442,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             });
             dialog.show(getSupportFragmentManager(), "point");
         });
-
 
         btnGetShopInfo.setOnClickListener(v -> {
             YoYoUtils.getDeviceInfo(new HttpCallbackListener<GetDeviceInfoReply>() {
@@ -412,7 +455,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                         }
                     }
                 }
-
                 @Override
                 public void onEventActivityFailure(@Nullable Reply<ErrorInfo> reply) {
                     Toast.makeText(MainActivity.this, "获取信息失败", Toast.LENGTH_LONG).show();
@@ -429,6 +471,7 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 Toast.makeText(MainActivity.this, "保存失败", Toast.LENGTH_LONG).show();
             }
         });
+
         getLearning.setOnClickListener(v -> {
             Reply<?> reply = YoYoUtils.getStudyData();
             if (reply.getCode() == ReplyCode.Success) {
@@ -482,6 +525,8 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         web_to_yoyo.setOnClickListener(v -> {
             BrowserIntents.from(this).openLink("http://www.yoyo.link/").show();
         });
+
+        favorite_lists.setOnClickListener(v -> checkfav());
     }
 
     private void initSdk() {
@@ -570,6 +615,34 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             }
         } else {
             LogExtKt.logI("不是Android 11系统");
+        }
+    }
+
+    private void checkfav() {
+        if( this.weight > 0) {
+            Gson gson = new Gson();
+            String favorite_item = sharedPreferences.getString("fav_item","");
+            if( !favorite_item.equals("") ){
+                List<YoYoItemInfo> fav_itemInfoList = new ArrayList<>();
+                favorite_item_class fav_item = gson.fromJson(favorite_item,favorite_item_class.class);
+                YoYoItemInfo itemInfo = new YoYoItemInfo();
+                itemInfo.setPlu(fav_item.getplu());
+                itemInfo.setItemName(fav_item.getitemName());
+                itemInfo.setTupian(fav_item.gettupian());
+                itemInfo.setIsOn(1);
+                itemInfo.setIsLock(0);
+                itemInfo.unitType = PriceUnitTypeEnum.WeightType;
+                itemInfo.itemCode = fav_item.getplu();
+                itemInfo.unitPrice = (int)fav_item.getunitPrice();
+                fav_itemInfoList.add(itemInfo);
+                llTips.setVisibility(View.GONE);
+                listView.setVisibility(View.VISIBLE);
+                resultItemAdapter.updateData(fav_itemInfoList);
+                llSearch.setVisibility(View.GONE);
+                isSearch = false;
+            }
+        }else{
+            Toast.makeText(this, "無重量！！", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -745,7 +818,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
                 salePriceDesc.setText("元/个");
             }
 
-
             int p1 = baseInfo.unitPrice / 100;
             int p2 = baseInfo.unitPrice % 100;
 
@@ -827,14 +899,25 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
         isSearch = false;
         EventBus.getDefault().post(new MessageEvent(""));
         resultItemAdapter.updateData(new ArrayList<>());
-
         llTips.setVisibility(View.VISIBLE);
         listView.setVisibility(View.GONE);
-        Log.d("MainActivity", "您点击了" + info.itemName + ",tupian:" + info.tupian);
+        //Log.d("onEventItemClick", "您点击了" + info.itemName + ",tupian:" + info.tupian);
 
         //设置点击单价和总价
         updateView();
         updateWeight(weight);
+
+        //儲存最近一次選擇的品項
+        favorite_item_class fav_item = new favorite_item_class();
+        fav_item.setplu(info.plu);
+        fav_item.setitemName(info.itemName);
+        fav_item.setunitPrice((Integer)info.unitPrice);
+        fav_item.settupian(info.tupian);
+        Gson gson = new Gson();
+        String fav_item_Json = gson.toJson(fav_item);
+        editor.putString("fav_item",fav_item_Json);
+        editor.commit();
+
         //調用打印
         printer_iteminfo(info,request);
     }
@@ -874,9 +957,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            //this.printer.pageEnd();
-            //this.printer.pagePrint(1);
-            //this.printer.reset();
         }else{
             Log.i("printer_iteminfo","Error ,printer is null!");
         }
@@ -885,10 +965,8 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
     // tscale functions
     @Override
     public void onWeightUpdate(TADWeight weight, boolean isStable, boolean isTared, boolean isZero) {
-        //TSLog.console(TSLog.v, "Update Weight: " + weight.getWeightInGramString() + " : " + weight.getUnit() + ",isStable:" + isStable );
         //Log.i("onWeightUpdate","Update Weight: " + weight.getWeightInGramString() + " : " + weight.getUnit() + ",isStable:" + isStable + ",isTared:" + isTared + ",isZero:" + isZero);
-        //Log.i("onWeightUpdate", "Get weight string:" + weight.getWeightString() + " sign:" + weight.getWeightSign() + " gram:" + String.valueOf(weight.getWeightInGram()));
-        //long startTime = SystemClock.elapsedRealtime();
+        //checkWeight 裡會使用 YoYoUtils.aiMatching ,SDK說明其呼叫間隔要至少 100ms 以上否則會有問題
         if( onWeightUpdate_startTime == 0 ) {
             onWeightUpdate_startTime = SystemClock.elapsedRealtime();
             checkWeight(weight,isStable,isTared,isZero);
@@ -904,8 +982,6 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
             }
             //onWeightUpdate_startTime = endTime;
         }
-        //long endTime = SystemClock.elapsedRealtime();
-        //long elapsedTime = endTime - startTime;
     }
 
     @Override
@@ -981,12 +1057,12 @@ public class MainActivity extends AppCompatActivity implements ResultItemAdapter
 
     @Override
     public void onNumberClicked(int number) {
-        //Toast.makeText(this, "Number keyboard:" + number , Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Number keyboard:" + number , Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onLeftAuxButtonClicked() {
-        //Toast.makeText(this, "left aux keyboard!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "left aux keyboard!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
